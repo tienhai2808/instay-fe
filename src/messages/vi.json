@@ -1,0 +1,2425 @@
+{
+  "HomePage": {
+    "title": "Chào mừng đến với Instay",
+    "description": "Nơi nghỉ dưỡng lý tưởng cho bạn.",
+    "header": {
+      "notifications": "Thông báo",
+      "switchToEnglish": "Đổi sang tiếng Anh",
+      "switchToVietnamese": "Đổi sang tiếng Việt",
+      "searchPlaceholder": "Tìm kiếm",
+      "fallbackTenantName": "Khách sạn Instay",
+      "fallbackTenantPhone": "Chưa cập nhật số điện thoại",
+      "goToFeedbacks": "Xem trang đánh giá",
+      "notificationPanel": {
+        "title": "Thông báo của bạn",
+        "close": "Đóng",
+        "empty": "Bạn chưa có thông báo nào.",
+        "unread": "Chưa đọc",
+        "loading": "Đang tải thêm..."
+      }
+    },
+    "latestNews": {
+      "title": "Tin tức mới nhất",
+      "empty": "Hiện chưa có tin tức nào.",
+      "fallbackTitle": "Tin tức",
+      "excerptEmpty": "Chưa có tóm tắt.",
+      "unknownDate": "Chưa rõ ngày đăng",
+      "justNow": "Vừa xong"
+    },
+    "serviceTypes": {
+      "title": "Loại dịch vụ",
+      "viewAll": "Xem tất cả",
+      "collapse": "Thu gọn",
+      "empty": "Không có loại dịch vụ phù hợp."
+    },
+    "popularServices": {
+      "title": "Dịch vụ phổ biến",
+      "empty": "Không có dịch vụ phù hợp."
+    },
+    "todayPromotions": {
+      "title": "Khuyến mãi hôm nay",
+      "empty": "Không có khuyến mãi phù hợp."
+    }
+  },
+  "CollectionsPage": {
+    "fallbackTitle": "Dịch vụ",
+    "empty": "Không có dịch vụ phù hợp."
+  },
+  "ProductDetailsPage": {
+    "fallbackTitle": "Chi tiết dịch vụ",
+    "descriptionTitle": "Mô tả dịch vụ",
+    "imageEmpty": "Dịch vụ chưa có hình ảnh.",
+    "descriptionEmpty": "Dịch vụ chưa có mô tả.",
+    "priceLabel": "Giá",
+    "promotionLabel": "Ưu đãi",
+    "promotionNone": "Không có",
+    "bookService": "Đặt dịch vụ",
+    "orderCreatedSuccess": "Đặt dịch vụ thành công.",
+    "orderModal": {
+      "title": "Đặt dịch vụ",
+      "serviceLabel": "Dịch vụ",
+      "quantityLabel": "Số lượng",
+      "estimatedAtLabel": "Thời gian dự kiến",
+      "estimatedAtRequired": "Vui lòng chọn thời gian dự kiến.",
+      "estimatedAtInvalid": "Thời gian dự kiến không hợp lệ.",
+      "guestNoteLabel": "Ghi chú",
+      "guestNotePlaceholder": "Nhập ghi chú",
+      "submit": "Đặt dịch vụ",
+      "submitting": "Đang xử lý..."
+    }
+  },
+  "NewsDetailsPage": {
+    "fallbackTitle": "Chi tiết tin tức",
+    "publishedAtEmpty": "Chưa rõ thời gian đăng",
+    "justNow": "Vừa xong",
+    "imageEmpty": "Tin tức này chưa có hình ảnh.",
+    "excerptTitle": "Tóm tắt",
+    "excerptEmpty": "Tin tức này chưa có tóm tắt.",
+    "contentTitle": "Nội dung",
+    "contentEmpty": "Tin tức này chưa có nội dung."
+  },
+  "RequestsPage": {
+    "title": "Gửi yêu cầu",
+    "supportCategoryTitle": "Chọn loại Yêu cầu",
+    "supportCategoryEmpty": "Không có loại yêu cầu khả dụng.",
+    "contentTitle": "Nhập yêu cầu",
+    "contentPlaceholder": "Nhập yêu cầu",
+    "priorityTitle": "Mức độ ưu tiên",
+    "submit": "Gửi yêu cầu",
+    "submitting": "Đang gửi...",
+    "submitSuccess": "Gửi yêu cầu thành công.",
+    "ticketListTitle": "Danh sách yêu cầu",
+    "ticketListEmpty": "Bạn chưa có yêu cầu nào.",
+    "ticketFields": {
+      "content": "Nội dung",
+      "priority": "Mức độ ưu tiên"
+    },
+    "actions": {
+      "message": "Nhắn tin",
+      "openingChat": "Đang mở...",
+      "cancel": "Hủy yêu cầu",
+      "cancelConfirm": "Bạn có chắc muốn hủy yêu cầu này không?",
+      "keepRequest": "Giữ lại"
+    },
+    "ticketStatuses": {
+      "pending": "Chờ xác nhận",
+      "done": "Hoàn thành",
+      "resolved": "Đã xử lý",
+      "accepted": "Đã xác nhận",
+      "cancelled": "Đã hủy",
+      "unknown": "Không xác định"
+    },
+    "chatErrors": {
+      "missingSupportCategory": "Không tìm thấy loại yêu cầu để mở chat.",
+      "unavailable": "Không thể mở cuộc trò chuyện lúc này."
+    },
+    "errors": {
+      "supportCategoryRequired": "Vui lòng chọn loại yêu cầu.",
+      "contentRequired": "Vui lòng nhập nội dung yêu cầu.",
+      "priorityRequired": "Vui lòng chọn mức ưu tiên."
+    },
+    "priorityDescriptions": {
+      "urgent": {
+        "label": "1 - Khẩn cấp",
+        "description": "Xử lý trong vòng 1 giờ kể từ lúc Xác nhận"
+      },
+      "high": {
+        "label": "2 - Nhanh",
+        "description": "Xử lý trong vòng 2-3 giờ kể từ lúc Xác nhận"
+      },
+      "medium": {
+        "label": "3 - Tiêu chuẩn",
+        "description": "Xử lý trong vòng 3-5 giờ kể từ lúc Xác nhận"
+      },
+      "low": {
+        "label": "4 - Thấp",
+        "description": "Xử lý trong vòng 6-12 giờ kể từ lúc Xác nhận"
+      }
+    }
+  },
+  "FeedbacksPage": {
+    "title": "Đánh giá",
+    "featuredReviewsTitle": "Đánh giá nổi bật",
+    "featuredReviewsEmpty": "Chưa có đánh giá nào.",
+    "reviewAuthor": "Khách #{id}",
+    "emptyContent": "Khách hàng chưa để lại nội dung.",
+    "writeReviewTitle": "Viết đánh giá",
+    "contentPlaceholder": "Viết đánh giá",
+    "submit": "Gửi đánh giá",
+    "submitting": "Đang gửi...",
+    "submitSuccess": "Gửi đánh giá thành công.",
+    "updateSuccess": "Cập nhật đánh giá thành công.",
+    "actions": {
+      "previous": "Xem đánh giá trước",
+      "next": "Xem đánh giá tiếp theo"
+    },
+    "errors": {
+      "starRequired": "Vui lòng chọn số sao.",
+      "contentRequired": "Vui lòng nhập nội dung đánh giá."
+    }
+  },
+  "OrdersPage": {
+    "title": "Đơn hàng của bạn",
+    "empty": "Bạn chưa có đơn dịch vụ nào.",
+    "serviceFallback": "Dịch vụ",
+    "emptyNote": "Không có",
+    "fields": {
+      "quantity": "Số lượng",
+      "note": "Ghi chú",
+      "guestNote": "Ghi chú khách",
+      "staffNote": "Ghi chú nhân viên",
+      "cancelReason": "Lý do hủy",
+      "total": "Tổng"
+    },
+    "statuses": {
+      "pending": "Chờ xác nhận",
+      "confirmed": "Đã xác nhận",
+      "cancelled": "Đã hủy",
+      "unknown": "Không xác định"
+    },
+    "actions": {
+      "cancel": "Hủy đơn",
+      "reorder": "Đặt lại",
+      "message": "Nhắn tin",
+      "openingChat": "Đang mở..."
+    },
+    "chatErrors": {
+      "missingService": "Không tìm thấy dịch vụ để mở chat.",
+      "unavailable": "Không thể mở cuộc trò chuyện lúc này."
+    },
+    "cancelModal": {
+      "title": "Hủy đơn dịch vụ",
+      "confirmText": "Bạn có chắc chắn muốn hủy đơn dịch vụ này không?",
+      "serviceLabel": "Dịch vụ",
+      "reasonLabel": "Lý do hủy (không bắt buộc)",
+      "reasonPlaceholder": "Nhập lý do hủy",
+      "submit": "Xác nhận hủy",
+      "submitting": "Đang xử lý..."
+    }
+  },
+  "MessagesPage": {
+    "title": "Cuộc trò chuyện",
+    "searchPlaceholder": "Tìm kiếm",
+    "departmentFallback": "Bộ phận hỗ trợ",
+    "defaultPreview": "Bộ phận: Bạn cần giúp đỡ gì...",
+    "prefixes": {
+      "hotel": "KS: ",
+      "you": "bạn: ",
+      "customer": "KH: "
+    },
+    "composerPlaceholder": "Nhập tin nhắn",
+    "staffTitle": "Nhân viên",
+    "composer": {
+      "attach": "Đính kèm",
+      "emoji": "Biểu tượng cảm xúc",
+      "send": "Gửi",
+      "chooseImage": "Chọn ảnh",
+      "chooseFile": "Chọn tệp",
+      "takePhoto": "Chụp ảnh",
+      "removeAttachment": "Xóa tệp đính kèm",
+      "emojiAriaLabel": "Biểu tượng {emoji}",
+      "fileTooLarge": "Tệp vượt quá giới hạn {sizeMb}MB.",
+      "sendFailed": "Không thể gửi tin nhắn. Vui lòng thử lại.",
+      "sendSuccess": "Đã gửi thành công.",
+      "replyingTo": "Đang trả lời {name}",
+      "cancelReply": "Hủy trả lời"
+    },
+    "replyTitles": {
+      "guest": {
+        "department": "Trả lời bộ phận",
+        "you": "Trả lời bạn",
+        "self": "Trả lời chính mình"
+      },
+      "staff": {
+        "you": "Trả lời tin nhắn bạn",
+        "guest": "Trả lời tin nhắn khách hàng",
+        "department": "Trả lời {name}"
+      }
+    },
+    "emptyPreview": "Bạn cần giúp đỡ gì...",
+    "empty": "Bạn chưa có cuộc trò chuyện nào.",
+    "loadingMore": "Đang tải thêm...",
+    "preview": {
+      "departmentMessage": "Bạn cần giúp đỡ gì không?"
+    },
+    "detail": {
+      "defaultHeader": "Cuộc trò chuyện",
+      "placeholder": "Màn chi tiết hội thoại đang được hoàn thiện.",
+      "placeholderWithId": "Màn chi tiết hội thoại #{id} đang được hoàn thiện."
+    },
+    "staff": {
+      "placeholderTitle": "Chọn một cuộc trò chuyện",
+      "placeholderDescription": "Danh sách chat đã sẵn sàng ở bên trái. Nhấn vào một phòng để bắt đầu hỗ trợ khách.",
+      "placeholderHint": "Nhấn sticker để tương tác",
+      "emptyChat": "Chưa có tin nhắn nào.",
+      "previewMissingBookingRoom": "Không tìm thấy thông tin phòng đặt.",
+      "readonlyHint": "Tài khoản này chỉ có quyền xem realtime, không thể tương tác."
+    },
+    "typing": {
+      "staffList": "{name}: đang nhập...",
+      "guestList": "{name}: đang nhập..."
+    },
+    "attachments": {
+      "image": "[Hình ảnh]",
+      "video": "[Video]",
+      "audio": "[Âm thanh]",
+      "file": "[Tệp đính kèm]"
+    },
+    "time": {
+      "now": "Vừa xong"
+    }
+  },
+  "Common": {
+    "language": "Ngôn ngữ",
+    "vietnamese": "Tiếng Việt",
+    "english": "Tiếng Anh",
+    "acknowledge": "Đã hiểu",
+    "viewNow": "Xem ngay"
+  },
+  "NotFoundPage": {
+    "staff": {
+      "code": "404",
+      "title": "Không tìm thấy trang nhân sự",
+      "description": "Tài nguyên bạn yêu cầu không tồn tại hoặc đã bị xóa.",
+      "primaryAction": "Đi tới trang mặc định"
+    },
+    "guest": {
+      "code": "404",
+      "title": "Không tìm thấy trang khách",
+      "description": "Xin lỗi, trang bạn yêu cầu hiện không khả dụng.",
+      "primaryAction": "Đi tới trang mặc định"
+    },
+    "root": {
+      "code": "404",
+      "title": "Không tìm thấy trang",
+      "description": "Chúng tôi không tìm thấy nội dung bạn đang tìm.",
+      "primaryAction": "Đi tới trang mặc định"
+    },
+    "global": {
+      "code": "404",
+      "title": "Không tìm thấy trang toàn cục",
+      "description": "Đường dẫn này không khớp với bất kỳ route nào của ứng dụng.",
+      "primaryAction": "Đi tới trang mặc định",
+      "metadataTitle": "404 - Không tìm thấy trang",
+      "metadataDescription": "Trang bạn đang tìm không tồn tại."
+    }
+  },
+  "Header": {
+    "greeting": "Xin chào",
+    "title": "Hệ thống quản lý khách sạn thông minh INSTAY",
+    "defaultUser": "Người dùng",
+    "logout": "Đăng xuất"
+  },
+  "AuthLayout": {
+    "welcome": "Chào mừng đến với Instay",
+    "headingLine1": "Hệ thống Quản lý Khách sạn",
+    "headingLine2": "thông minh",
+    "features": {
+      "dashboard": "Dashboard tổng quan",
+      "booking": "Quản lý đặt phòng tập trung",
+      "roomService": "Quản lý phòng và dịch vụ",
+      "customer": "Kết nối khách hàng"
+    }
+  },
+  "LoginPage": {
+    "usernamePlaceholder": "Tên đăng nhập",
+    "passwordPlaceholder": "Mật khẩu",
+    "remember": "Ghi nhớ đăng nhập",
+    "forgotPassword": "Quên mật khẩu?",
+    "submit": "Đăng nhập",
+    "needHelp": "Cần hỗ trợ?",
+    "contact": "Liên hệ chúng tôi"
+  },
+  "ForgotPasswordPage": {
+    "title": "Quên mật khẩu",
+    "subtitle": "Nhập Email để khôi phục mật khẩu",
+    "emailPlaceholder": "Email",
+    "hint": "Chúng tôi sẽ gửi liên kết đặt lại mật khẩu đến email của bạn.",
+    "submit": "Gửi OTP",
+    "backToLogin": "Quay lại đăng nhập"
+  },
+  "VerifyOtpPage": {
+    "title": "Xác minh OTP",
+    "subtitle": "Vui lòng nhập mã OTP đã được gửi đến email của bạn.",
+    "expiresIn": "Mã OTP sẽ hết hạn sau",
+    "otpLabel": "Nhập mã OTP",
+    "verify": "Xác minh",
+    "resend": "Gửi lại OTP",
+    "resendWithCooldown": "Gửi lại OTP ({seconds}s)"
+  },
+  "NewPasswordPage": {
+    "title": "Đặt lại mật khẩu",
+    "subtitle": "Tạo mật khẩu mới cho tài khoản của bạn.",
+    "hint": "Mật khẩu nên có ít nhất 6 ký tự để đảm bảo an toàn cho tài khoản.",
+    "newPasswordPlaceholder": "Mật khẩu mới",
+    "confirmPasswordPlaceholder": "Xác nhận mật khẩu",
+    "submit": "Xác nhận"
+  },
+  "Sidebar": {
+    "overview": "Tổng quan",
+    "booking-management": "Quản lý đặt phòng",
+    "bookings": "Đặt phòng",
+    "room-management": "Quản lý phòng",
+    "room-types": "Loại phòng",
+    "rooms": "Danh sách phòng",
+    "service-management": "Quản lý dịch vụ",
+    "service-types": "Loại dịch vụ",
+    "services": "Danh sách dịch vụ",
+    "events": "Sự kiện",
+    "order-services": "Đơn dịch vụ",
+    "request-management": "Quản lý yêu cầu",
+    "support-tickets": "Yêu cầu hỗ trợ",
+    "support-categories": "Loại hỗ trợ",
+    "customers": "Khách hàng",
+    "staffs": "Nhân viên",
+    "departments": "Bộ phận",
+    "branches": "Chi nhánh",
+    "reviews": "Đánh giá",
+    "chats": "Tin nhắn",
+    "accommodation": "Lưu trú",
+    "calendar": "Lịch giá",
+    "price-calculator": "Tính giá",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất"
+  },
+  "CalendarPage": {
+    "title": "Lịch giá",
+    "subtitle": "Quản lý thẻ giá theo từng ngày trong 2 năm.",
+    "actions": {
+      "update": "Cập nhật",
+      "updating": "Đang cập nhật...",
+      "reset": "Đặt lại bản nháp",
+      "addTag": "Thêm thẻ",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "edit": "Sửa",
+      "delete": "Xóa",
+      "paintRow": "Tô cả hàng tuần này",
+      "paintColumn": "Tô cả cột thứ này"
+    },
+    "tags": {
+      "title": "Thẻ giá",
+      "activeTool": "Công cụ đang chọn",
+      "clearTool": "Chế độ xóa",
+      "addPlaceholder": "Nhập tên thẻ giá mới",
+      "editPlaceholder": "Sửa tên thẻ giá",
+      "empty": "Chưa có thẻ giá.",
+      "delete": {
+        "title": "Xóa thẻ giá",
+        "description": "Bạn có chắc muốn xóa thẻ giá này không?",
+        "confirm": "Xóa"
+      }
+    },
+    "calendar": {
+      "today": "Hôm nay",
+      "noTag": "Không có tag",
+      "outsideMonth": "Ngoài tháng hiện tại",
+      "monthEmpty": "Không có ngày khả dụng trong tháng này."
+    },
+    "status": {
+      "dirty": "Bạn có thay đổi chưa lưu.",
+      "synced": "Tất cả thay đổi đã đồng bộ.",
+      "emptyPayload": "Hãy gán ít nhất một ngày vào thẻ giá trước khi cập nhật."
+    },
+    "empty": {
+      "calendar": "Không có dữ liệu lịch giá."
+    }
+  },
+  "PriceCalculatorPage": {
+    "badge": "Máy tính giá",
+    "title": "Máy tính giá phòng",
+    "subtitle": "Chọn loại phòng, khoảng thời gian và số lượng phòng để tính giá nhanh.",
+    "labels": {
+      "screen": "Màn hình kết quả",
+      "roomTypes": "Bàn phím loại phòng",
+      "dateRange": "Khoảng thời gian",
+      "quantity": "Số lượng phòng",
+      "selectedRoom": "Loại phòng đã chọn"
+    },
+    "placeholders": {
+      "fromDate": "Từ ngày",
+      "toDate": "Đến ngày",
+      "quantity": "Nhập số lượng phòng"
+    },
+    "actions": {
+      "calculate": "Tính giá",
+      "calculating": "Đang tính..."
+    },
+    "states": {
+      "selectRoomType": "Hãy chọn loại phòng trước nhé.",
+      "selectDateRange": "Hãy chọn khoảng ngày hợp lệ nhé.",
+      "invalidDateRange": "Ngày trả phòng phải sau ngày nhận phòng.",
+      "invalidQuantity": "Số lượng phòng phải lớn hơn 0.",
+      "noRoomTypes": "Chưa có loại phòng khả dụng.",
+      "idleTitle": "Sẵn sàng tính giá",
+      "idleHint": "Nhấn Tính giá để hiển thị số ngày, tổng tiền và giá trung bình.",
+      "loading": "Đang xử lý",
+      "errorTitle": "Có lỗi xảy ra",
+      "errorHint": "Không tính được lần này, vui lòng thử lại."
+    },
+    "result": {
+      "days": "Số ngày",
+      "total": "Tổng giá",
+      "average": "Giá trung bình",
+      "flash": "Kết quả lấy trực tiếp từ hệ thống giá hiện tại."
+    }
+  },
+  "Validation": {
+    "required": "Vui lòng nhập {field}",
+    "invalidEmail": "Email không hợp lệ",
+    "invalidPhone": "Số điện thoại không hợp lệ",
+    "minChars": "{field} phải có ít nhất {min} ký tự",
+    "exactChars": "{field} phải có đúng {length} ký tự",
+    "greaterThanZero": "{field} phải lớn hơn 0",
+    "passwordMismatch": "Mật khẩu xác nhận không khớp",
+    "fields": {
+      "username": "username",
+      "password": "mật khẩu",
+      "email": "email",
+      "phone": "số điện thoại",
+      "hotelName": "tên khách sạn",
+      "city": "địa điểm",
+      "ward": "phường / xã",
+      "branchName": "tên chi nhánh",
+      "branchAddress": "địa chỉ chi nhánh",
+      "imapHost": "IMAP host",
+      "imapPort": "IMAP port",
+      "imapUser": "IMAP user",
+      "imapPassword": "IMAP password",
+      "emailBookingSubject": "tiêu đề email",
+      "emailBookingBookingNumber": "mã đặt phòng",
+      "emailBookingGuest": "khách hàng",
+      "emailBookingCheckIn": "ngày nhận phòng",
+      "emailBookingCheckOut": "ngày trả phòng",
+      "emailBookingBookedOn": "ngày đặt",
+      "emailBookingRoomsBooked": "phòng đã đặt",
+      "emailBookingSource": "nguồn",
+      "emailBookingTotalNetPrice": "tổng net",
+      "emailBookingTotalSellPrice": "tổng bán",
+      "emailBookingGuestNumber": "số lượng khách",
+      "emailBookingRoomNumber": "số lượng phòng",
+      "emailBookingPromotionName": "tên khuyến mãi",
+      "emailBookingMealPlan": "gói ăn",
+      "emailBookingBookingConditions": "điều kiện đặt phòng",
+      "emailBookingBookingPreferences": "yêu cầu đặt phòng",
+      "emailCancelSubject": "tiêu đề email hủy",
+      "emailCancelBodies": "nội dung email hủy",
+      "firstName": "họ",
+      "lastName": "tên",
+      "oldPassword": "mật khẩu hiện tại",
+      "newPassword": "mật khẩu mới",
+      "confirmPassword": "xác nhận mật khẩu",
+      "serviceTypeName": "tên loại dịch vụ",
+      "supportCategoryName": "tên loại hỗ trợ",
+      "department": "bộ phận",
+      "roomTypeName": "tên loại phòng",
+      "roomPrice": "giá phòng",
+      "floor": "tầng",
+      "roomName": "tên phòng",
+      "roomNumber": "số phòng",
+      "customerName": "tên khách hàng",
+      "guestCount": "số lượng khách",
+      "guestType": "loại khách",
+      "bookingNumber": "mã đặt phòng",
+      "source": "nguồn",
+      "checkIn": "thời gian nhận phòng",
+      "checkOut": "thời gian trả phòng",
+      "bookingStatus": "trạng thái đặt phòng",
+      "totalSellPrice": "tổng giá bán",
+      "totalNetPrice": "tổng giá net",
+      "checkInDate": "ngày nhận phòng",
+      "checkOutDate": "ngày trả phòng",
+      "serviceName": "tên dịch vụ",
+      "serviceType": "loại dịch vụ",
+      "servicePrice": "giá dịch vụ",
+      "serviceDiscountType": "loại giảm giá",
+      "serviceDiscountValue": "giá trị giảm giá",
+      "serviceDiscountStartAt": "thời điểm bắt đầu giảm",
+      "serviceDiscountEndAt": "thời điểm kết thúc giảm",
+      "serviceDescription": "mô tả dịch vụ",
+      "serviceImages": "hình ảnh dịch vụ",
+      "eventTitle": "tiêu đề sự kiện",
+      "eventExcerpt": "tóm tắt sự kiện",
+      "eventContent": "nội dung sự kiện",
+      "eventThumbnail": "ảnh đại diện sự kiện",
+      "guestFullName": "họ và tên",
+      "dateOfBirth": "ngày sinh",
+      "nationality": "quốc tịch",
+      "passportNumber": "số hộ chiếu",
+      "otp": "mã OTP",
+      "staffNote": "ghi chú nhân viên",
+      "pricingTag": "thẻ giá",
+      "pricingDirection": "tùy chọn tăng/giảm",
+      "pricingType": "loại giá",
+      "pricingValue": "giá trị điều chỉnh"
+    }
+  },
+  "DashboardPage": {
+    "title": "Bảng điều khiển",
+    "tabs": {
+      "overview": "Tổng quan",
+      "operation": "Vận hành",
+      "review": "Đánh giá"
+    },
+    "filters": {
+      "fromDate": "Từ ngày",
+      "toDate": "Đến ngày",
+      "presets": {
+        "last_7_days": "7 ngày trước",
+        "last_30_days": "30 ngày trước",
+        "last_90_days": "90 ngày trước",
+        "this_week": "Tuần này",
+        "this_month": "Tháng này",
+        "this_year": "Năm này",
+        "last_week": "Tuần trước",
+        "last_month": "Tháng trước",
+        "last_year": "Năm trước",
+        "custom": "Tùy chỉnh"
+      }
+    },
+    "cards": {
+      "compareLabel": "So với kỳ trước",
+      "totalRevenue": {
+        "title": "Tổng doanh thu"
+      },
+      "occupancyRate": {
+        "title": "Tỷ lệ lấp phòng"
+      },
+      "cancellationRate": {
+        "title": "Tỷ lệ hủy phòng"
+      },
+      "averageDaysStay": {
+        "title": "Số ngày lưu trú trung bình"
+      }
+    },
+    "charts": {
+      "revenueOverTime": {
+        "title": "Tổng quan doanh thu",
+        "allRoomTypes": "Tất cả loại phòng",
+        "roomTypePlaceholder": "Chọn loại phòng"
+      },
+      "roomTypeRevenue": {
+        "title": "Doanh thu theo loại phòng"
+      },
+      "sourceRevenue": {
+        "title": "Nguồn đặt phòng"
+      }
+    },
+    "table": {
+      "title": "Đặt phòng gần đây",
+      "actions": {
+        "viewAllBookings": "Xem tất cả booking"
+      },
+      "columns": {
+        "bookingId": "Mã đặt phòng",
+        "customerName": "Khách hàng",
+        "roomId": "Loại phòng",
+        "checkIn": "Nhận phòng",
+        "checkOut": "Trả phòng",
+        "status": "Trạng thái"
+      }
+    },
+    "statuses": {
+      "confirmed": "Đã xác nhận",
+      "checked-in": "Đã check-in",
+      "checked-out": "Đã check-out",
+      "cancelled": "Đã hủy",
+      "unknown": "Không xác định"
+    },
+    "empty": {
+      "noChartData": "Không có dữ liệu biểu đồ.",
+      "noBookings": "Không có dữ liệu đặt phòng.",
+      "noSupportTickets": "Không có dữ liệu yêu cầu hỗ trợ."
+    },
+    "operation": {
+      "cards": {
+        "todayCheckIn": {
+          "title": "Check-in hôm nay"
+        },
+        "todayCheckOut": {
+          "title": "Check-out hôm nay"
+        },
+        "pendingRequests": {
+          "title": "Yêu cầu chờ xử lý"
+        },
+        "inProgressRequests": {
+          "title": "Yêu cầu đang xử lý"
+        },
+        "unreadMessages": {
+          "title": "Tin nhắn chưa đọc"
+        }
+      },
+      "charts": {
+        "guestNational": {
+          "title": "Số khách theo quốc gia",
+          "tooltipGuests": "{count} khách"
+        },
+        "serviceTypeCount": {
+          "title": "Tỷ trọng đặt dịch vụ theo loại",
+          "tooltipOrders": "{count} lượt ({percent}%)"
+        },
+        "supportTicketTime": {
+          "title": "Phân bổ thời gian xử lý yêu cầu",
+          "averageLabel": "Trung bình"
+        }
+      },
+      "table": {
+        "title": "Yêu cầu gần đây",
+        "actions": {
+          "viewAllSupportTickets": "Xem tất cả"
+        },
+        "columns": {
+          "requestType": "Loại yêu cầu",
+          "room": "Phòng",
+          "time": "Thời gian",
+          "status": "Trạng thái",
+          "completedAt": "Thời gian hoàn thành"
+        },
+        "duration": {
+          "seconds": "giây",
+          "minutes": "phút",
+          "hours": "giờ"
+        }
+      },
+      "statuses": {
+        "pending": "Chờ xử lý",
+        "accepted": "Đang xử lý",
+        "done": "Hoàn thành",
+        "cancelled": "Đã hủy"
+      }
+    },
+    "review": {
+      "cards": {
+        "totalReviews": {
+          "title": "Tổng đánh giá"
+        },
+        "averageStar": {
+          "title": "Điểm trung bình"
+        },
+        "positiveRate": {
+          "title": "Tỷ lệ tích cực"
+        },
+        "negativeRate": {
+          "title": "Tỷ lệ tiêu cực"
+        }
+      },
+      "charts": {
+        "sentimentTime": {
+          "title": "Xu hướng cảm xúc theo thời gian"
+        },
+        "sentimentCount": {
+          "title": "Tỷ trọng cảm xúc"
+        },
+        "categoryCount": {
+          "title": "Số lượng đánh giá theo danh mục",
+          "tooltipReviews": "{count} đánh giá"
+        },
+        "categorySentiment": {
+          "title": "Cảm xúc theo danh mục"
+        },
+        "shared": {
+          "tooltipCountPercent": "{count} đánh giá ({percent}%)"
+        }
+      },
+      "sentiments": {
+        "positive": "Tích cực",
+        "negative": "Tiêu cực",
+        "neutral": "Trung lập"
+      },
+      "categories": {
+        "price": "Giá",
+        "service": "Dịch vụ",
+        "employee": "Nhân viên",
+        "room": "Phòng",
+        "utility": "Tiện ích",
+        "amenities": "Tiện nghi"
+      }
+    }
+  },
+  "DepartmentPage": {
+    "title": "Quản lý Bộ phận",
+    "subtitle": "Quản lý toàn bộ bộ phận tại khách sạn",
+    "searchPlaceholder": "Tìm kiếm theo tên bộ phận",
+    "empty": "Không có bộ phận",
+    "staff": "Nhân viên",
+    "permissions": "Phân quyền",
+    "actions": {
+      "create": "Thêm bộ phận mới",
+      "view": "Xem chi tiết",
+      "cancel": "Hủy",
+      "close": "Đóng",
+      "save": "Lưu",
+      "delete": "Xóa"
+    },
+    "delete": {
+      "title": "Xóa bộ phận",
+      "description": "Bạn có chắc muốn xóa bộ phận này không?",
+      "confirm": "Xóa"
+    },
+    "modal": {
+      "title": {
+        "create": "Thêm bộ phận mới",
+        "edit": "Chỉnh sửa bộ phận",
+        "view": "Chi tiết bộ phận"
+      }
+    },
+    "meta": {
+      "title": "Thông tin cập nhật",
+      "createdBy": "Người tạo",
+      "updatedBy": "Người sửa gần nhất",
+      "createdAt": "Ngày tạo",
+      "updatedAt": "Ngày sửa gần nhất"
+    },
+    "form": {
+      "name": "Tên bộ phận",
+      "namePlaceholder": "Nhập tên bộ phận",
+      "phone": "Số điện thoại",
+      "phonePlaceholder": "Nhập số điện thoại",
+      "phoneMaxLength": "Số điện thoại tối đa 20 ký tự",
+      "description": "Mô tả",
+      "descriptionPlaceholder": "Nhập mô tả bộ phận",
+      "permissions": "Phân quyền"
+    }
+  },
+  "StaffsPage": {
+    "title": "Quản lý Nhân viên",
+    "subtitle": "Quản lý toàn bộ nhân viên tại khách sạn",
+    "empty": "Không có nhân viên",
+    "actions": {
+      "create": "Thêm nhân viên",
+      "search": "Tìm kiếm",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "deleteBatch": "Xóa đã chọn",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "more": "Thêm"
+    },
+    "createPage": {
+      "title": "Thêm Nhân viên mới",
+      "subtitle": "Tạo hồ sơ nhân viên và phân quyền ngay từ bước đầu"
+    },
+    "detailPage": {
+      "title": "Chi tiết Nhân viên",
+      "back": "Quay lại",
+      "resetPassword": "Đặt lại mật khẩu",
+      "resetPasswordModal": {
+        "title": "Đặt lại mật khẩu",
+        "submit": "Đặt lại mật khẩu"
+      },
+      "meta": {
+        "title": "Thông tin cập nhật",
+        "createdBy": "Người tạo",
+        "updatedBy": "Người sửa gần nhất",
+        "createdAt": "Ngày tạo",
+        "updatedAt": "Lần cập nhật cuối"
+      }
+    },
+    "form": {
+      "sections": {
+        "personalInfo": "Thông tin cá nhân",
+        "accountInfo": "Thông tin tài khoản",
+        "workInfo": "Thông tin công việc"
+      },
+      "firstName": "Họ",
+      "firstNamePlaceholder": "Nhập họ",
+      "lastName": "Tên",
+      "lastNamePlaceholder": "Nhập tên",
+      "email": "Email",
+      "emailPlaceholder": "Nhập email",
+      "phone": "Số điện thoại",
+      "phonePlaceholder": "Nhập số điện thoại",
+      "username": "Tên đăng nhập",
+      "usernamePlaceholder": "Nhập tên đăng nhập",
+      "password": "Mật khẩu",
+      "passwordPlaceholder": "Nhập mật khẩu",
+      "role": "Vai trò",
+      "rolePlaceholder": "Chọn vai trò",
+      "status": "Trạng thái hoạt động",
+      "department": "Bộ phận",
+      "departmentPlaceholder": "Chọn bộ phận (không bắt buộc)",
+      "branches": "Chi nhánh",
+      "branchesPlaceholder": "Chọn chi nhánh",
+      "allBranches": "Tất cả chi nhánh",
+      "avatar": "Ảnh nhân viên",
+      "avatarUploadTitle": "Kéo thả ảnh vào đây hoặc bấm để chọn ảnh",
+      "avatarUploadHint": "Hỗ trợ JPG, PNG, WEBP - tối đa 1 ảnh"
+    },
+    "filters": {
+      "searchPlaceholder": "Tìm theo tên, username hoặc email",
+      "role": "Lọc theo vai trò",
+      "department": "Lọc theo bộ phận",
+      "branch": "Lọc theo chi nhánh",
+      "status": "Lọc theo trạng thái"
+    },
+    "table": {
+      "staffName": "Tên nhân viên",
+      "role": "Vai trò",
+      "department": "Bộ phận",
+      "branches": "Chi nhánh",
+      "status": "Trạng thái",
+      "createdAt": "Ngày tạo"
+    },
+    "roles": {
+      "admin": "Quản trị viên",
+      "staff": "Nhân viên"
+    },
+    "statuses": {
+      "active": "Đang hoạt động",
+      "inactive": "Tạm ngưng"
+    },
+    "pagination": {
+      "pageInfo": "Trang {current}/{totalPages}",
+      "selectedRows": "{selected} trên {total} dòng được chọn"
+    },
+    "selection": {
+      "selected": "{count} đã chọn"
+    },
+    "delete": {
+      "title": "Xóa nhân viên",
+      "description": "Bạn có chắc muốn xóa nhân viên này không?",
+      "confirm": "Xóa"
+    }
+  },
+  "AccommodationPage": {
+    "title": "Danh sách lưu trú",
+    "subtitle": "Quản lý toàn bộ thông tin lưu trú tại khách sạn",
+    "empty": "Không có thông tin lưu trú",
+    "hint": {
+      "mustCreateFromBooking": "Đăng ký lưu trú mới cần thực hiện từ trang chi tiết đặt phòng. Trang này chỉ hỗ trợ xem, chỉnh sửa và xóa."
+    },
+    "filters": {
+      "searchPlaceholder": "Tìm theo tên khách hoặc số hộ chiếu",
+      "fromDate": "Từ ngày",
+      "toDate": "Đến ngày"
+    },
+    "export": {
+      "button": "Xuất CSV",
+      "exporting": "Đang xuất...",
+      "options": {
+        "checkInAsc": "Ngày đến tăng dần",
+        "checkInDesc": "Ngày đến giảm dần",
+        "checkOutAsc": "Ngày đi tăng dần",
+        "checkOutDesc": "Ngày đi giảm dần"
+      },
+      "errors": {
+        "failed": "Xuất dữ liệu thất bại",
+        "emptyFile": "Không có dữ liệu để xuất"
+      }
+    },
+    "table": {
+      "guestName": "Họ và tên",
+      "dob": "Ngày sinh",
+      "national": "Quốc tịch",
+      "passport": "Số hộ chiếu",
+      "room": "Phòng",
+      "checkIn": "Ngày đến",
+      "checkOut": "Ngày đi"
+    },
+    "actions": {
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "more": "Thêm"
+    },
+    "delete": {
+      "title": "Xóa thông tin lưu trú",
+      "description": "Bạn có chắc muốn xóa thông tin lưu trú này không?",
+      "confirm": "Xóa"
+    },
+    "pagination": {
+      "pageInfo": "Trang {current}/{totalPages}",
+      "selectedRows": "{selected} trên {total} dòng được chọn"
+    },
+    "modal": {
+      "title": "Chi tiết lưu trú"
+    },
+    "form": {
+      "fullName": "Họ và tên",
+      "fullNamePlaceholder": "Nhập họ và tên",
+      "dob": "Ngày sinh",
+      "dobPlaceholder": "Chọn ngày sinh",
+      "national": "Quốc tịch",
+      "nationalPlaceholder": "Nhập quốc tịch",
+      "passport": "Số hộ chiếu",
+      "passportPlaceholder": "Nhập số hộ chiếu",
+      "passportMax": "Số hộ chiếu tối đa {max} ký tự"
+    },
+    "meta": {
+      "title": "Thông tin bổ sung",
+      "bookingRoom": "Phòng lưu trú",
+      "bookingRoomCode": "Mã đặt phòng",
+      "checkIn": "Nhận phòng",
+      "checkOut": "Trả phòng",
+      "checkInDate": "Ngày nhận phòng",
+      "checkOutDate": "Ngày trả phòng",
+      "createdBy": "Người tạo",
+      "updatedBy": "Người sửa gần nhất",
+      "createdAt": "Ngày tạo",
+      "updatedAt": "Ngày sửa gần nhất"
+    }
+  },
+  "CustomersPage": {
+    "title": "Danh sách khách hàng",
+    "subtitle": "Xem và xuất toàn bộ dữ liệu khách hàng",
+    "empty": "Không có khách hàng",
+    "filters": {
+      "searchPlaceholder": "Tìm theo số điện thoại",
+      "fromDate": "Từ ngày",
+      "toDate": "Đến ngày"
+    },
+    "export": {
+      "button": "Xuất CSV",
+      "exporting": "Đang xuất...",
+      "options": {
+        "createdAtAsc": "Ngày tạo tăng dần",
+        "createdAtDesc": "Ngày tạo giảm dần"
+      },
+      "errors": {
+        "failed": "Xuất dữ liệu thất bại",
+        "emptyFile": "Không có dữ liệu để xuất"
+      }
+    },
+    "table": {
+      "id": "Mã khách hàng",
+      "phone": "Số điện thoại",
+      "birthYear": "Năm sinh",
+      "gender": "Giới tính",
+      "createdAt": "Ngày tạo"
+    },
+    "gender": {
+      "male": "Nam",
+      "female": "Nữ",
+      "other": "Khác"
+    },
+    "pagination": {
+      "pageInfo": "Trang {current}/{totalPages}",
+      "selectedRows": "{selected} trên {total} dòng được chọn"
+    }
+  },
+  "RoomsPage": {
+    "title": "Quản lý Phòng",
+    "subtitle": "Quản lý toàn bộ phòng tại khách sạn",
+    "empty": "Không có phòng",
+    "actions": {
+      "create": "Thêm phòng mới",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "deleteBatch": "Xóa đã chọn",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "more": "Thêm"
+    },
+    "filters": {
+      "searchPlaceholder": "Tìm theo tên phòng",
+      "branch": "Lọc theo chi nhánh",
+      "roomType": "Lọc theo loại phòng",
+      "floor": "Lọc theo tầng"
+    },
+    "table": {
+      "roomName": "Tên phòng",
+      "roomType": "Loại phòng",
+      "branch": "Chi nhánh",
+      "floor": "Tầng",
+      "createdAt": "Ngày tạo"
+    },
+    "pagination": {
+      "pageInfo": "Trang {current}/{totalPages}",
+      "selectedRows": "{selected} trên {total} dòng được chọn"
+    },
+    "selection": {
+      "selected": "{count} đã chọn"
+    },
+    "delete": {
+      "title": "Xóa phòng",
+      "description": "Bạn có chắc muốn xóa phòng này không?",
+      "confirm": "Xóa"
+    },
+    "modal": {
+      "title": {
+        "create": "Thêm phòng mới",
+        "edit": "Chi tiết phòng"
+      }
+    },
+    "meta": {
+      "title": "Thông tin cập nhật",
+      "createdBy": "Người tạo",
+      "updatedBy": "Người sửa gần nhất",
+      "createdAt": "Ngày tạo",
+      "updatedAt": "Ngày sửa gần nhất"
+    },
+    "form": {
+      "name": "Tên phòng",
+      "namePlaceholder": "Nhập tên phòng",
+      "roomType": "Loại phòng",
+      "roomTypePlaceholder": "Chọn loại phòng",
+      "floor": "Tầng",
+      "floorPlaceholder": "Chọn tầng"
+    },
+    "floors": {
+      "title": "Quản lý tầng",
+      "subtitle": "Thêm, sửa hoặc xóa tầng ngay trong biểu mẫu này.",
+      "add": "Thêm tầng",
+      "branchPlaceholder": "Chọn chi nhánh",
+      "addPlaceholder": "Nhập tên tầng mới",
+      "editPlaceholder": "Nhập tên tầng",
+      "empty": "Chưa có tầng",
+      "delete": {
+        "title": "Xóa tầng",
+        "description": "Bạn có chắc muốn xóa tầng này không?",
+        "confirm": "Xóa"
+      }
+    }
+  },
+  "BookingsPage": {
+    "title": "Quản lý Đặt phòng",
+    "subtitle": "Quản lý toàn bộ booking và nguồn đặt phòng tại khách sạn",
+    "searchPlaceholder": "Tìm theo tên khách hoặc mã đặt phòng",
+    "empty": "Không có booking",
+    "actions": {
+      "create": "Đặt phòng mới",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "confirm": "Xác nhận",
+      "more": "Thêm"
+    },
+    "predict": {
+      "button": "Dự báo",
+      "buttonAria": "Mở dự báo khả năng hủy booking",
+      "card": {
+        "label": "AI dự báo",
+        "title": "Dự báo hủy booking bằng AI",
+        "subtitle": "Ước tính nhanh khả năng hủy cho booking đang xác nhận."
+      },
+      "modal": {
+        "title": "AI Dự Báo Hủy Booking",
+        "booking": "Booking {bookingNumber}",
+        "subtitle": "Tổng hợp dự báo dựa trên các tín hiệu hiện tại của booking.",
+        "fields": {
+          "probability": "Khả năng hủy",
+          "riskLevel": "Mức độ rủi ro",
+          "willCancel": "Có khả năng hủy"
+        },
+        "scaleLabel": "Thang xác suất hủy",
+        "footnote": "Nên dùng như tín hiệu tham khảo và kết hợp xác nhận trực tiếp với khách.",
+        "suggestions": {
+          "low": "Rủi ro thấp. Quy trình theo dõi hiện tại thường đã đủ.",
+          "medium": "Rủi ro trung bình. Nên chủ động liên hệ xác nhận lại với khách.",
+          "high": "Rủi ro cao. Nên ưu tiên liên hệ khách sớm và chuẩn bị phương án thay thế.",
+          "unknown": "Chưa đủ dữ liệu để đưa ra khuyến nghị rõ ràng."
+        }
+      },
+      "riskLevels": {
+        "low": "Thấp",
+        "medium": "Trung bình",
+        "high": "Cao",
+        "unknown": "Không xác định"
+      },
+      "values": {
+        "yes": "Có",
+        "no": "Không",
+        "noData": "Chưa có dữ liệu dự báo."
+      }
+    },
+    "createPage": {
+      "title": "Tạo Đặt phòng mới",
+      "back": "Quay lại"
+    },
+    "detailPage": {
+      "title": "Chi tiết đặt phòng",
+      "back": "Quay lại",
+      "actions": {
+        "selectRoom": "Chọn phòng",
+        "changeRoom": "Thay đổi phòng"
+      },
+      "locked": {
+        "byOfflineSource": "Booking không phải nguồn Trực tiếp (Offline) nên không thể chỉnh sửa thông tin booking.",
+        "byCheckedIn": "Booking đã ở trạng thái Đã nhận phòng nên không thể chỉnh sửa thông tin hoặc đổi phòng.",
+        "byStatus": "Booking không ở trạng thái Chờ xác nhận nên không thể chỉnh sửa thông tin hoặc đổi phòng."
+      },
+      "statusActions": {
+        "title": "Cập nhật trạng thái",
+        "checkIn": "Nhận phòng",
+        "cancelBooking": "Hủy đặt phòng",
+        "checkOut": "Trả phòng",
+        "checkInRoomMismatchHint": "Cần chọn đủ số phòng theo booking trước khi nhận phòng."
+      },
+      "roomSection": {
+        "title": "Thông tin phòng",
+        "empty": "Booking chưa có phòng nào được chọn.",
+        "room": "Phòng",
+        "preview": "Xem trước",
+        "showQr": "Hiển thị QR",
+        "showDetails": "Xem chi tiết phòng"
+      },
+      "pendingRoomSelection": {
+        "message": "Bạn đã chọn phòng xem trước nhưng chưa nhận phòng. Bạn có chắc chắn muốn thoát không?",
+        "confirmExit": "Xác nhận thoát"
+      },
+      "selectRoomModal": {
+        "title": "Chọn phòng",
+        "room": "Phòng",
+        "placeholder": "Chọn phòng còn trống",
+        "submit": "Chọn phòng",
+        "processing": "Đang xử lý..."
+      },
+      "changeRoomModal": {
+        "title": "Thay đổi phòng",
+        "bookingRoom": "Phòng booking",
+        "bookingRoomPlaceholder": "Chọn phòng booking cần đổi",
+        "newRoom": "Phòng mới",
+        "newRoomPlaceholder": "Chọn phòng còn trống",
+        "currentRoom": "Phòng hiện tại",
+        "submit": "Lưu thay đổi",
+        "processing": "Đang xử lý..."
+      },
+      "qrModal": {
+        "title": "Xin mời quét mã QR",
+        "subtitle": "Nâng tầm trải nghiệm của bạn!",
+        "missing": "Không có mã để tạo QR.",
+        "code": "Mã booking room",
+        "print": "In QR"
+      },
+      "bookingRoomDetailsModal": {
+        "title": "Thông tin phòng {room}",
+        "bookingNumber": "Mã booking: {bookingNumber}",
+        "empty": "Không có dữ liệu",
+        "tabs": {
+          "stay": "Lưu trú",
+          "services": "Dịch vụ",
+          "support": "Yêu cầu",
+          "review": "Đánh giá"
+        },
+        "sections": {
+          "stay": "Thông tin lưu trú",
+          "services": "Dịch vụ đã đặt",
+          "support": "Yêu cầu hỗ trợ",
+          "review": "Đánh giá"
+        },
+        "actions": {
+          "add": "Thêm thông tin",
+          "createServiceOrder": "Tạo đơn dịch vụ",
+          "scanDocuments": "Quét giấy tờ",
+          "more": "Thao tác khác",
+          "edit": "Chỉnh sửa",
+          "delete": "Xóa",
+          "cancel": "Hủy",
+          "requiresCheckedIn": "Cần nhận phòng trước khi thực hiện thao tác này",
+          "close": "Thoát"
+        },
+        "table": {
+          "index": "STT",
+          "guestName": "Họ và tên",
+          "dob": "Ngày sinh",
+          "national": "Quốc tịch",
+          "passport": "Hộ chiếu",
+          "room": "Phòng",
+          "checkIn": "Ngày đến",
+          "checkOut": "Ngày đi",
+          "service": "Dịch vụ",
+          "quantity": "Số lượng",
+          "unitPrice": "Đơn giá",
+          "totalPrice": "Tổng giá",
+          "estimatedAt": "Thời gian dự kiến",
+          "status": "Trạng thái",
+          "guestNote": "Ghi chú khách",
+          "category": "Loại hỗ trợ",
+          "content": "Nội dung",
+          "priority": "Mức độ ưu tiên",
+          "createdAt": "Ngày tạo"
+        },
+        "review": {
+          "reviewId": "Mã đánh giá",
+          "rating": "Số sao",
+          "content": "Nội dung đánh giá",
+          "empty": "Chưa có đánh giá"
+        },
+        "verification": {
+          "title": "Xác minh giấy tờ",
+          "processing": "Đang tạo phiên...",
+          "sessionId": "Mã phiên: {sessionId}",
+          "status": "Trạng thái: {status}",
+          "sessionCompleted": "Phiên {sessionId} đã hoàn tất: {status}",
+          "sessionFailed": "Phiên {sessionId} thất bại: {status}",
+          "errors": {
+            "missingUrl": "Không nhận được đường dẫn xác minh từ hệ thống."
+          }
+        },
+        "serviceOrderModal": {
+          "title": "Tạo đơn dịch vụ",
+          "empty": "Chưa có dịch vụ trong hệ thống",
+          "emptyWithFilters": "Không tìm thấy dịch vụ phù hợp bộ lọc",
+          "emptyByType": "Nhóm dịch vụ này chưa có dữ liệu",
+          "untitledType": "Nhóm dịch vụ",
+          "untitledService": "Dịch vụ",
+          "noThumbnail": "Không có ảnh",
+          "filters": {
+            "searchPlaceholder": "Tìm theo tên dịch vụ",
+            "serviceTypePlaceholder": "Lọc theo loại dịch vụ"
+          },
+          "actions": {
+            "backToList": "Quay lại danh sách dịch vụ",
+            "create": "Tạo đơn dịch vụ",
+            "processing": "Đang xử lý..."
+          },
+          "detail": {
+            "description": "Mô tả dịch vụ",
+            "noDescription": "Chưa có mô tả",
+            "active": "Đang hoạt động",
+            "inactive": "Tạm ngưng"
+          },
+          "form": {
+            "title": "Đặt dịch vụ",
+            "fields": {
+              "quantity": "Số lượng",
+              "totalPrice": "Tổng giá",
+              "estimatedAt": "Thời gian sử dụng dự kiến",
+              "guestNote": "Lưu ý từ khách hàng"
+            },
+            "placeholders": {
+              "quantity": "Nhập số lượng",
+              "estimatedAt": "Chọn thời gian dự kiến",
+              "guestNote": "Nhập lưu ý từ khách hàng (không bắt buộc)"
+            },
+            "validation": {
+              "guestNoteMin": "Lưu ý từ khách hàng phải có ít nhất 1 ký tự"
+            }
+          },
+          "labels": {
+            "name": "Tên dịch vụ",
+            "price": "Giá dịch vụ",
+            "discountType": "Loại giảm giá",
+            "discountValue": "Giá trị giảm",
+            "discountStartAt": "Bắt đầu giảm",
+            "discountEndAt": "Kết thúc giảm"
+          },
+          "discountTypeOptions": {
+            "percent": "Phần trăm",
+            "amount": "Số tiền"
+          }
+        },
+        "guestModal": {
+          "title": {
+            "create": "Thêm thông tin lưu trú",
+            "edit": "Cập nhật thông tin lưu trú"
+          },
+          "fields": {
+            "fullName": "Họ và tên",
+            "dob": "Ngày sinh",
+            "national": "Quốc tịch",
+            "passport": "Số hộ chiếu"
+          },
+          "placeholders": {
+            "fullName": "Nhập họ và tên",
+            "dob": "Chọn ngày sinh",
+            "national": "Nhập quốc tịch",
+            "passport": "Nhập số hộ chiếu"
+          },
+          "actions": {
+            "create": "Tạo thông tin",
+            "update": "Lưu thay đổi",
+            "processing": "Đang xử lý..."
+          },
+          "validation": {
+            "passportMax": "Số hộ chiếu không được vượt quá {max} ký tự"
+          },
+          "delete": {
+            "title": "Xóa thông tin lưu trú",
+            "description": "Bạn có chắc muốn xóa thông tin lưu trú này không?",
+            "confirm": "Xóa"
+          }
+        }
+      },
+      "deleteModal": {
+        "title": "Xóa booking",
+        "description": "Bạn có chắc muốn xóa booking này không?",
+        "confirm": "Xóa"
+      },
+      "errors": {
+        "notFound": "Không tìm thấy booking"
+      },
+      "meta": {
+        "title": "Thông tin cập nhật",
+        "createdBy": "Người tạo",
+        "updatedBy": "Người sửa gần nhất",
+        "createdAt": "Ngày tạo",
+        "updatedAt": "Ngày sửa gần nhất"
+      }
+    },
+    "filters": {
+      "source": "Nguồn",
+      "branch": "Chi nhánh",
+      "roomType": "Loại phòng",
+      "status": "Trạng thái",
+      "date": "Lọc theo ngày",
+      "fromDate": "Từ ngày",
+      "toDate": "Đến ngày"
+    },
+    "views": {
+      "list": "Dạng danh sách",
+      "chart": "Dạng biểu đồ",
+      "card": "Dạng thẻ",
+      "comingSoon": "Chế độ xem này sẽ được cập nhật sớm."
+    },
+    "sources": {
+      "offline": "Trực tiếp (Offline)",
+      "add": "Thêm nguồn",
+      "addPlaceholder": "Nhập tên nguồn mới",
+      "editPlaceholder": "Nhập tên nguồn",
+      "empty": "Chưa có nguồn",
+      "delete": {
+        "title": "Xóa nguồn",
+        "description": "Bạn có chắc muốn xóa nguồn này không?",
+        "confirm": "Xóa"
+      }
+    },
+    "table": {
+      "id": "Mã đặt phòng",
+      "source": "Nguồn",
+      "customer": "Tên khách",
+      "room": "Phòng",
+      "checkin": "Nhận phòng",
+      "checkout": "Trả phòng",
+      "status": "Trạng thái",
+      "action": "Thao tác"
+    },
+    "pagination": "Hiển thị {from} - {to} của {total}",
+    "statuses": {
+      "all": "Tất cả",
+      "confirmed": "Đã xác nhận",
+      "cancelled": "Đã hủy",
+      "checkedIn": "Đã nhận phòng",
+      "checkedOut": "Đã trả phòng",
+      "unfilled": "Chưa chọn phòng"
+    },
+    "card": {
+      "source": "Nguồn",
+      "branch": "Chi nhánh",
+      "roomType": "Loại phòng",
+      "roomNumber": "Số phòng",
+      "rooms": "Phòng",
+      "checkIn": "Ngày nhận",
+      "checkOut": "Ngày trả",
+      "total": "Tổng tiền"
+    },
+    "chart": {
+      "roomTypeFallback": "Loại phòng",
+      "roomFallback": "Phòng",
+      "tags": {
+        "all": "Tất cả",
+        "available": "Đang trống",
+        "occupied": "Đang ở",
+        "booked": "Đã đặt"
+      }
+    },
+    "roomTimeline": {
+      "searchPlaceholder": "Tìm theo tên phòng",
+      "filters": {
+        "floor": "Tầng"
+      },
+      "statuses": {
+        "all": "Tất cả",
+        "available": "Đang trống",
+        "occupied": "Đang ở",
+        "upcomingCheckin": "Sắp nhận",
+        "overdueCheckout": "Quá giờ trả",
+        "overdueCheckin": "Quá giờ nhận"
+      },
+      "badges": {
+        "clean": "Sạch",
+        "notClean": "Chưa dọn"
+      },
+      "labels": {
+        "price": "Giá",
+        "checkIn": "Check-in",
+        "checkOut": "Check-out",
+        "sourceBooking": "Booking",
+        "roomUnit": "phòng"
+      },
+      "actions": {
+        "book": "Đặt phòng"
+      }
+    },
+    "form": {
+      "sections": {
+        "guestInfo": "Thông tin khách hàng",
+        "stayInfo": "Thông tin lưu trú",
+        "pricing": "Thông tin giá",
+        "additionalInfo": "Thông tin bổ sung"
+      },
+      "bookingNumber": "Mã đặt phòng",
+      "bookingNumberPlaceholder": "Nhập mã đặt phòng",
+      "bookingNumberAuto": "Mã đặt phòng sẽ được tạo tự động cho nguồn trực tiếp.",
+      "guestFullName": "Họ tên khách",
+      "guestFullNamePlaceholder": "Nhập họ tên khách",
+      "guestEmail": "Email khách",
+      "guestEmailPlaceholder": "Nhập email khách",
+      "guestPhone": "Số điện thoại khách",
+      "guestPhonePlaceholder": "Nhập số điện thoại khách",
+      "branch": "Chi nhánh",
+      "branchPlaceholder": "Chọn chi nhánh",
+      "roomType": "Loại phòng",
+      "roomTypePlaceholder": "Chọn loại phòng",
+      "roomNumber": "Số phòng",
+      "roomNumberPlaceholder": "Nhập số phòng",
+      "guestNumber": "Số lượng khách",
+      "guestCount": "Số lượng",
+      "guestCountPlaceholder": "Nhập số lượng khách",
+      "guestType": "Loại khách",
+      "guestTypePlaceholder": "Chọn loại khách",
+      "addGuestGroup": "Thêm nhóm khách",
+      "checkIn": "Nhận phòng",
+      "checkOut": "Trả phòng",
+      "dateTimePlaceholder": "Chọn ngày và giờ",
+      "checkOutAfterCheckIn": "Giờ trả phòng phải sau giờ nhận phòng",
+      "bookedOnAuto": "Ngày đặt sẽ tự động lấy ngày hiện tại.",
+      "source": "Nguồn",
+      "sourcePlaceholder": "Chọn nguồn",
+      "status": "Trạng thái",
+      "statusPlaceholder": "Chọn trạng thái",
+      "totalSellPrice": "Tổng giá bán",
+      "totalSellPricePlaceholder": "Nhập tổng giá bán",
+      "totalNetPrice": "Tổng giá net",
+      "totalNetPricePlaceholder": "Nhập tổng giá net (không bắt buộc)",
+      "promotionName": "Tên khuyến mãi",
+      "promotionNamePlaceholder": "Nhập tên khuyến mãi",
+      "mealPlan": "Gói bữa ăn",
+      "mealPlanPlaceholder": "Nhập gói bữa ăn",
+      "bookingPreferences": "Yêu cầu đặt phòng",
+      "bookingPreferencesPlaceholder": "Nhập yêu cầu đặt phòng",
+      "bookingConditions": "Điều kiện đặt phòng",
+      "bookingConditionsPlaceholder": "Nhập điều kiện đặt phòng",
+      "note": "Ghi chú",
+      "notePlaceholder": "Nhập ghi chú (không bắt buộc)",
+      "guestTypes": {
+        "adults": "Người lớn",
+        "children": "Trẻ em",
+        "infants": "Em bé"
+      }
+    }
+  },
+  "RoomsListPage": {
+    "title": "Quản lý Phòng",
+    "searchPlaceholder": "Tìm theo tên phòng hoặc mã phòng",
+    "actions": {
+      "create": "Thêm phòng mới",
+      "save": "Lưu",
+      "cancel": "Hủy"
+    },
+    "filters": {
+      "roomType": "Loại phòng",
+      "floor": "Tầng"
+    },
+    "table": {
+      "id": "ID",
+      "name": "Tên phòng",
+      "floor": "Tầng",
+      "type": "Loại phòng",
+      "status": "Trạng thái"
+    },
+    "statuses": {
+      "inUse": "Đang sử dụng",
+      "available": "Đang trống"
+    },
+    "form": {
+      "title": "Thêm phòng mới",
+      "floor": "Tầng",
+      "floorPlaceholder": "Nhập tầng",
+      "name": "Tên phòng",
+      "namePlaceholder": "Nhập tên phòng",
+      "roomType": "Loại phòng",
+      "roomTypePlaceholder": "Chọn loại phòng"
+    }
+  },
+  "RoomTypesPage": {
+    "title": "Quản lý Loại phòng",
+    "subtitle": "Quản lý toàn bộ loại phòng tại khách sạn",
+    "selected": "Đã chọn {count}",
+    "searchPlaceholder": "Tìm kiếm loại phòng",
+    "empty": "Không có loại phòng",
+    "noBranches": "Chưa gán",
+    "rooms": "Phòng",
+    "people": "người",
+    "night": "đêm",
+    "actions": {
+      "create": "Thêm loại phòng mới",
+      "view": "Xem chi tiết",
+      "cancel": "Hủy",
+      "close": "Đóng",
+      "save": "Lưu",
+      "add": "Thêm loại phòng",
+      "deleteSelected": "Xóa đã chọn",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa"
+    },
+    "delete": {
+      "title": "Xóa loại phòng",
+      "description": "Bạn có chắc muốn xóa loại phòng này không?",
+      "confirm": "Xóa"
+    },
+    "modal": {
+      "title": {
+        "create": "Thêm loại phòng mới",
+        "edit": "Chỉnh sửa loại phòng",
+        "view": "Chi tiết loại phòng"
+      }
+    },
+    "meta": {
+      "title": "Thông tin cập nhật",
+      "createdBy": "Người tạo",
+      "updatedBy": "Người sửa gần nhất",
+      "createdAt": "Ngày tạo",
+      "updatedAt": "Ngày sửa gần nhất"
+    },
+    "form": {
+      "name": "Tên loại phòng",
+      "namePlaceholder": "Nhập tên loại phòng",
+      "branches": "Chi nhánh",
+      "branchesPlaceholder": "Chọn chi nhánh",
+      "allBranches": "Tất cả chi nhánh",
+      "price": "Giá phòng",
+      "pricePlaceholder": "Nhập giá phòng",
+      "surfaceArea": "Diện tích",
+      "surfaceAreaPlaceholder": "Nhập diện tích",
+      "maxPeople": "Số người tối đa",
+      "maxPeoplePlaceholder": "Nhập số người tối đa"
+    },
+    "filters": {
+      "branch": "Lọc theo chi nhánh"
+    },
+    "table": {
+      "id": "ID",
+      "name": "Loại phòng",
+      "price": "Giá",
+      "creator": "Người tạo",
+      "createdAt": "Ngày tạo",
+      "action": "Thao tác"
+    },
+    "pricingStrategies": {
+      "title": "Chiến lược giá",
+      "subtitle": "Quản lý điều chỉnh giá theo thẻ giá cho loại phòng này.",
+      "empty": "Chưa có chiến lược giá nào.",
+      "list": {
+        "type": "Loại",
+        "direction": "Chiều",
+        "value": "Giá trị"
+      },
+      "options": {
+        "direction": {
+          "increase": "Tăng",
+          "decrease": "Giảm"
+        },
+        "type": {
+          "percent": "Phần trăm",
+          "amount": "Số tiền"
+        }
+      },
+      "actions": {
+        "add": "Thêm chiến lược giá",
+        "addDisabled": "Tất cả thẻ giá đã được áp dụng cho loại phòng này.",
+        "create": "Thêm chiến lược"
+      },
+      "modal": {
+        "title": {
+          "create": "Thêm chiến lược giá",
+          "edit": "Chỉnh sửa chiến lược giá"
+        }
+      },
+      "form": {
+        "pricingTag": "Thẻ giá",
+        "pricingTagPlaceholder": "Chọn thẻ giá",
+        "direction": "Tùy chọn tăng/giảm",
+        "directionPlaceholder": "Chọn tăng hoặc giảm",
+        "pricingType": "Loại giá",
+        "pricingTypePlaceholder": "Chọn loại giá",
+        "value": "Giá trị",
+        "valuePlaceholder": "Nhập giá trị điều chỉnh",
+        "errors": {
+          "decreasePercentMax": "Giảm theo phần trăm không được vượt quá 100%.",
+          "decreaseAmountMax": "Giảm theo số tiền không được vượt quá giá phòng."
+        }
+      },
+      "delete": {
+        "title": "Xóa chiến lược giá",
+        "description": "Bạn có chắc muốn xóa chiến lược giá này không?",
+        "confirm": "Xóa"
+      }
+    }
+  },
+  "RoomTypeFormDialog": {
+    "titleAdd": "Thêm loại phòng mới",
+    "titleEdit": "Thông tin loại phòng",
+    "cancel": "Hủy bỏ",
+    "save": "Lưu",
+    "name": "Tên loại phòng",
+    "namePlaceholder": "Nhập tên loại phòng",
+    "price": "Giá phòng",
+    "pricePlaceholder": "Nhập giá phòng",
+    "successCreate": "Đã thêm loại phòng thành công!",
+    "successUpdate": "Đã cập nhật loại phòng thành công!"
+  },
+  "DeleteRoomTypeDialog": {
+    "confirmAll": "Bạn có chắc chắn muốn xóa loại phòng đã chọn?",
+    "confirmSinglePrefix": "Bạn có chắc chắn muốn xóa",
+    "confirmButton": "Có, xoá!",
+    "cancelButton": "Không, huỷ",
+    "successAll": "Bạn đã xóa các loại phòng đã chọn thành công!",
+    "successSinglePrefix": "Bạn đã xóa",
+    "successSingleSuffix": "thành công!"
+  },
+  "ServiceTypesPage": {
+    "title": "Quản lý Loại dịch vụ",
+    "subtitle": "Quản lý toàn bộ loại dịch vụ tại khách sạn",
+    "empty": "Không có loại dịch vụ",
+    "actions": {
+      "create": "Thêm loại dịch vụ",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "more": "Thêm"
+    },
+    "filters": {
+      "searchPlaceholder": "Tìm kiếm loại dịch vụ",
+      "department": "Lọc theo bộ phận"
+    },
+    "table": {
+      "name": "Tên loại dịch vụ",
+      "department": "Bộ phận",
+      "serviceCount": "Số lượng dịch vụ",
+      "createdAt": "Ngày tạo"
+    },
+    "pagination": {
+      "pageInfo": "Trang {current}/{totalPages}",
+      "selectedRows": "{selected} trên {total} dòng được chọn"
+    },
+    "delete": {
+      "title": "Xóa loại dịch vụ",
+      "description": "Bạn có chắc muốn xóa loại dịch vụ này không?",
+      "confirm": "Xóa"
+    },
+    "modal": {
+      "title": {
+        "create": "Thêm loại dịch vụ mới",
+        "edit": "Chi tiết loại dịch vụ"
+      }
+    },
+    "meta": {
+      "title": "Thông tin cập nhật",
+      "createdBy": "Người tạo",
+      "updatedBy": "Người sửa gần nhất",
+      "createdAt": "Ngày tạo",
+      "updatedAt": "Ngày sửa gần nhất"
+    },
+    "form": {
+      "name": "Tên loại dịch vụ",
+      "icon": "Icon",
+      "namePlaceholder": "Nhập tên loại dịch vụ",
+      "department": "Bộ phận",
+      "departmentPlaceholder": "Chọn bộ phận"
+    }
+  },
+  "SupportCategoriesPage": {
+    "title": "Quản lý Loại hỗ trợ",
+    "subtitle": "Quản lý toàn bộ loại hỗ trợ tại khách sạn",
+    "empty": "Không có loại hỗ trợ",
+    "actions": {
+      "create": "Thêm loại hỗ trợ",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "more": "Thêm"
+    },
+    "filters": {
+      "searchPlaceholder": "Tìm kiếm loại hỗ trợ",
+      "department": "Lọc theo bộ phận"
+    },
+    "table": {
+      "name": "Tên loại hỗ trợ",
+      "department": "Bộ phận",
+      "supportTicketsCount": "Số lượng yêu cầu hỗ trợ",
+      "createdAt": "Ngày tạo"
+    },
+    "pagination": {
+      "pageInfo": "Trang {current}/{totalPages}",
+      "selectedRows": "{selected} trên {total} dòng được chọn"
+    },
+    "delete": {
+      "title": "Xóa loại hỗ trợ",
+      "description": "Bạn có chắc muốn xóa loại hỗ trợ này không?",
+      "confirm": "Xóa"
+    },
+    "modal": {
+      "title": {
+        "create": "Thêm loại hỗ trợ mới",
+        "edit": "Chi tiết loại hỗ trợ"
+      }
+    },
+    "meta": {
+      "title": "Thông tin cập nhật",
+      "createdBy": "Người tạo",
+      "updatedBy": "Người sửa gần nhất",
+      "createdAt": "Ngày tạo",
+      "updatedAt": "Ngày sửa gần nhất"
+    },
+    "form": {
+      "name": "Tên loại hỗ trợ",
+      "namePlaceholder": "Nhập tên loại hỗ trợ",
+      "department": "Bộ phận",
+      "departmentPlaceholder": "Chọn bộ phận"
+    }
+  },
+  "ServicesPage": {
+    "title": "Quản lý Dịch vụ",
+    "subtitle": "Quản lý toàn bộ dịch vụ tại khách sạn",
+    "empty": "Không có dịch vụ",
+    "actions": {
+      "create": "Thêm dịch vụ",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "deleteBatch": "Xóa đã chọn",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "more": "Thêm"
+    },
+    "createPage": {
+      "title": "Thêm Dịch vụ mới",
+      "back": "Quay lại"
+    },
+    "detailPage": {
+      "title": "Chi tiết Dịch vụ",
+      "back": "Quay lại",
+      "errors": {
+        "notFound": "Không tìm thấy dịch vụ"
+      },
+      "meta": {
+        "title": "Thông tin cập nhật",
+        "createdBy": "Người tạo",
+        "updatedBy": "Người sửa gần nhất",
+        "createdAt": "Ngày tạo",
+        "updatedAt": "Lần cập nhật cuối"
+      }
+    },
+    "form": {
+      "sections": {
+        "basicInfo": "Thông tin dịch vụ",
+        "pricing": "Thông tin giá"
+      },
+      "name": "Tên dịch vụ",
+      "namePlaceholder": "Nhập tên dịch vụ",
+      "serviceType": "Loại dịch vụ",
+      "serviceTypePlaceholder": "Chọn loại dịch vụ",
+      "branches": "Chi nhánh",
+      "branchesPlaceholder": "Chọn chi nhánh",
+      "allBranches": "Tất cả chi nhánh",
+      "price": "Giá dịch vụ",
+      "pricePlaceholder": "Nhập giá dịch vụ",
+      "discountType": "Loại giảm giá",
+      "discountTypePlaceholder": "Chọn loại giảm giá",
+      "discountTypeOptions": {
+        "percent": "Phần trăm",
+        "amount": "Số tiền"
+      },
+      "discountValue": "Giá trị giảm giá",
+      "discountValuePlaceholder": "Nhập giá trị giảm giá",
+      "discountStartAt": "Bắt đầu giảm giá",
+      "discountStartAtPlaceholder": "Chọn thời gian bắt đầu",
+      "discountEndAt": "Kết thúc giảm giá",
+      "discountEndAtPlaceholder": "Chọn thời gian kết thúc",
+      "discountGroupHint": "Các trường giảm giá phải nhập đủ cả 4 hoặc để trống toàn bộ.",
+      "discountPercentRangeInvalid": "Phần trăm giảm giá phải lớn hơn 0 và nhỏ hơn hoặc bằng 100.",
+      "discountAmountRangeInvalid": "Số tiền giảm giá phải lớn hơn 0 và nhỏ hơn hoặc bằng giá dịch vụ.",
+      "discountDateRangeInvalid": "Thời gian kết thúc phải sau thời gian bắt đầu.",
+      "description": "Mô tả",
+      "descriptionPlaceholder": "Nhập mô tả dịch vụ",
+      "status": "Trạng thái hoạt động",
+      "images": "Hình ảnh dịch vụ",
+      "imagesUploadTitle": "Kéo thả ảnh vào đây hoặc bấm để chọn ảnh",
+      "imagesUploadHint": "Hỗ trợ JPG, PNG, WEBP - tải nhiều ảnh",
+      "imagesDragHint": "Kéo thả từng ảnh để đổi vị trí, ảnh đầu tiên sẽ có thứ tự 1.",
+      "imagesEmpty": "Chưa có ảnh nào. Vui lòng thêm ít nhất 1 ảnh dịch vụ.",
+      "thumbnail": "Ảnh đại diện",
+      "setThumbnail": "Đặt làm đại diện"
+    },
+    "filters": {
+      "searchPlaceholder": "Tìm theo tên dịch vụ hoặc mô tả",
+      "serviceType": "Lọc theo loại dịch vụ",
+      "branch": "Lọc theo chi nhánh",
+      "status": "Lọc theo trạng thái"
+    },
+    "table": {
+      "serviceName": "Tên dịch vụ",
+      "serviceType": "Loại dịch vụ",
+      "branches": "Chi nhánh",
+      "price": "Giá",
+      "discountType": "Loại giảm giá",
+      "discountValue": "Giá trị giảm",
+      "discountStartAt": "Bắt đầu giảm",
+      "discountEndAt": "Kết thúc giảm",
+      "status": "Trạng thái",
+      "createdAt": "Ngày tạo"
+    },
+    "statuses": {
+      "active": "Đang hoạt động",
+      "inactive": "Tạm ngưng"
+    },
+    "pagination": {
+      "pageInfo": "Trang {current}/{totalPages}",
+      "selectedRows": "{selected} trên {total} dòng được chọn"
+    },
+    "selection": {
+      "selected": "{count} đã chọn"
+    },
+    "delete": {
+      "title": "Xóa dịch vụ",
+      "description": "Bạn có chắc muốn xóa dịch vụ này không?",
+      "confirm": "Xóa"
+    }
+  },
+  "EventsPage": {
+    "title": "Quản lý Sự kiện",
+    "subtitle": "Quản lý toàn bộ sự kiện hiển thị cho khách hàng",
+    "empty": "Không có sự kiện",
+    "actions": {
+      "create": "Thêm sự kiện",
+      "saveDraft": "Lưu bản nháp",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "deleteBatch": "Xóa đã chọn",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "more": "Thêm"
+    },
+    "createPage": {
+      "title": "Thêm Sự kiện mới",
+      "back": "Quay lại"
+    },
+    "detailPage": {
+      "title": "Chi tiết Sự kiện",
+      "back": "Quay lại",
+      "errors": {
+        "notFound": "Không tìm thấy sự kiện"
+      },
+      "meta": {
+        "title": "Thông tin cập nhật",
+        "createdBy": "Người tạo",
+        "updatedBy": "Người sửa gần nhất",
+        "createdAt": "Ngày tạo",
+        "updatedAt": "Ngày sửa gần nhất",
+        "publishedAt": "Ngày xuất bản"
+      }
+    },
+    "form": {
+      "sections": {
+        "basicInfo": "Thông tin cơ bản",
+        "content": "Nội dung sự kiện",
+        "publishing": "Xuất bản"
+      },
+      "title": "Tiêu đề",
+      "titlePlaceholder": "Nhập tiêu đề sự kiện",
+      "excerpt": "Tóm tắt",
+      "excerptPlaceholder": "Nhập tóm tắt sự kiện",
+      "branches": "Chi nhánh",
+      "branchesPlaceholder": "Chọn chi nhánh",
+      "allBranches": "Tất cả chi nhánh",
+      "content": "Nội dung",
+      "contentPlaceholder": "Nhập nội dung sự kiện",
+      "thumbnail": "Ảnh đại diện",
+      "thumbnailUploadTitle": "Kéo thả ảnh vào đây hoặc bấm để chọn ảnh",
+      "thumbnailUploadHint": "Hỗ trợ JPG, PNG, WEBP - tối đa 1 ảnh",
+      "thumbnailRequired": "Vui lòng chọn ảnh đại diện sự kiện",
+      "contentImageMissing": "Không tìm thấy ảnh vừa chèn trong nội dung. Vui lòng thử chèn lại ảnh.",
+      "contentImageUploadFailed": "Tải ảnh trong nội dung sự kiện thất bại.",
+      "sendNotification": "Gửi thông báo",
+      "sendNotificationHint": "Tùy chọn này chỉ áp dụng khi thêm sự kiện ở trạng thái hiển thị.",
+      "status": "Trạng thái hoạt động"
+    },
+    "filters": {
+      "searchPlaceholder": "Tìm theo tiêu đề hoặc nội dung tóm tắt",
+      "branch": "Lọc theo chi nhánh",
+      "status": "Lọc theo trạng thái"
+    },
+    "table": {
+      "title": "Sự kiện",
+      "excerpt": "Tóm tắt",
+      "branches": "Chi nhánh",
+      "status": "Trạng thái",
+      "publishedAt": "Ngày xuất bản",
+      "createdAt": "Ngày tạo"
+    },
+    "statuses": {
+      "active": "Đang hoạt động",
+      "inactive": "Tạm ẩn",
+      "unpublished": "Chưa xuất bản"
+    },
+    "pagination": {
+      "pageInfo": "Trang {current}/{totalPages}",
+      "selectedRows": "{selected} trên {total} dòng được chọn"
+    },
+    "sendNotificationOptions": {
+      "yes": "Có gửi",
+      "no": "Không gửi"
+    },
+    "selection": {
+      "selected": "{count} đã chọn"
+    },
+    "delete": {
+      "title": "Xóa sự kiện",
+      "description": "Bạn có chắc muốn xóa sự kiện này không?",
+      "confirm": "Xóa"
+    }
+  },
+  "OrderServicesPage": {
+    "title": "Quản lý Đơn Dịch vụ",
+    "subtitle": "Quản lý toàn bộ đơn dịch vụ tại khách sạn",
+    "empty": "Không có đơn dịch vụ",
+    "actions": {
+      "more": "Thêm",
+      "viewDetails": "Xem chi tiết"
+    },
+    "filters": {
+      "status": "Lọc theo trạng thái",
+      "fromDate": "Từ ngày",
+      "toDate": "Đến ngày"
+    },
+    "table": {
+      "orderId": "Mã đơn",
+      "service": "Dịch vụ",
+      "room": "Phòng",
+      "quantity": "Số lượng",
+      "totalPrice": "Tổng giá",
+      "status": "Trạng thái",
+      "estimatedAt": "Thời gian dự kiến",
+      "guestNote": "Ghi chú khách"
+    },
+    "statuses": {
+      "pending": "Chờ xử lý",
+      "confirmed": "Đã xác nhận",
+      "cancelled": "Đã hủy"
+    },
+    "pagination": {
+      "pageInfo": "Trang {current}/{totalPages}",
+      "selectedRows": "{selected} trên {total} dòng được chọn"
+    },
+    "detailPage": {
+      "title": "Chi tiết Đơn",
+      "back": "Quay lại",
+      "errors": {
+        "notFound": "Không tìm thấy đơn dịch vụ"
+      },
+      "sections": {
+        "orderInfo": "Thông tin đơn",
+        "serviceInfo": "Thông tin dịch vụ",
+        "notes": "Ghi chú"
+      },
+      "fields": {
+        "orderId": "Mã đơn",
+        "room": "Phòng",
+        "service": "Dịch vụ",
+        "servicePrice": "Giá dịch vụ",
+        "serviceUnitPrice": "Đơn giá",
+        "discountType": "Loại giảm giá",
+        "discountValue": "Giá trị giảm",
+        "discountStartAt": "Bắt đầu giảm",
+        "discountEndAt": "Kết thúc giảm",
+        "discountTypePercent": "Phần trăm",
+        "discountTypeAmount": "Số tiền",
+        "quantity": "Số lượng",
+        "totalPrice": "Tổng tiền",
+        "status": "Trạng thái",
+        "estimatedAt": "Thời gian dự kiến",
+        "guestNote": "Ghi chú khách",
+        "staffNote": "Ghi chú nhân viên",
+        "cancelReason": "Lý do hủy",
+        "noImage": "Không có ảnh"
+      },
+      "meta": {
+        "title": "Thông tin cập nhật",
+        "createdBy": "Người tạo",
+        "updatedBy": "Người sửa gần nhất",
+        "createdAt": "Ngày tạo",
+        "updatedAt": "Lần cập nhật cuối"
+      },
+      "actions": {
+        "exit": "Thoát",
+        "message": "Trò chuyện",
+        "openingChat": "Đang mở...",
+        "cancel": "Hủy",
+        "confirm": "Xác nhận"
+      },
+      "chatErrors": {
+        "missingBookingRoom": "Không tìm thấy phòng đặt để mở chat.",
+        "unavailable": "Không thể mở chat lúc này."
+      },
+      "confirmModal": {
+        "title": "Xác nhận đơn dịch vụ",
+        "confirmText": "Bạn có chắc chắn muốn xác nhận đơn dịch vụ này không?",
+        "staffNoteLabel": "Ghi chú nhân viên",
+        "staffNotePlaceholder": "Nhập ghi chú nhân viên",
+        "processing": "Đang xử lý...",
+        "submit": "Xác nhận"
+      }
+    }
+  },
+  "ReviewsPage": {
+    "title": "Quản lý Đánh giá",
+    "subtitle": "Quản lý toàn bộ đánh giá của khách tại khách sạn",
+    "empty": "Không có đánh giá",
+    "filters": {
+      "fromDate": "Từ ngày",
+      "toDate": "Đến ngày",
+      "order": "Sắp xếp theo ngày đánh giá"
+    },
+    "sort": {
+      "newestFirst": "Mới nhất trước",
+      "oldestFirst": "Cũ nhất trước"
+    },
+    "card": {
+      "roomPrefix": "Phòng",
+      "unknownGuest": "Khách không xác định",
+      "unknownDate": "Không rõ ngày",
+      "emptyContent": "Không có nội dung đánh giá"
+    },
+    "summary": {
+      "starLabel": "{star} sao",
+      "totalReviews": "({count} đánh giá)"
+    },
+    "pagination": "Hiển thị {from} - {to} của {total}"
+  },
+  "SupportTicketsPage": {
+    "title": "Quản lý Yêu cầu hỗ trợ",
+    "subtitle": "Quản lý toàn bộ yêu cầu hỗ trợ tại khách sạn",
+    "empty": "Không có yêu cầu hỗ trợ",
+    "actions": {
+      "more": "Thêm",
+      "viewDetails": "Xem chi tiết"
+    },
+    "filters": {
+      "status": "Lọc theo trạng thái",
+      "priority": "Lọc theo mức độ",
+      "fromDate": "Từ ngày",
+      "toDate": "Đến ngày"
+    },
+    "table": {
+      "requestType": "Loại yêu cầu",
+      "room": "Phòng",
+      "priority": "Mức độ",
+      "status": "Trạng thái",
+      "content": "Nội dung",
+      "createdAt": "Ngày tạo"
+    },
+    "statuses": {
+      "pending": "Chờ xử lý",
+      "accepted": "Đã tiếp nhận",
+      "cancelled": "Đã hủy",
+      "done": "Hoàn thành"
+    },
+    "priorities": {
+      "low": "4 - Thấp",
+      "medium": "3 - Tiêu chuẩn",
+      "high": "2 - Nhanh",
+      "urgent": "1 - Khẩn cấp"
+    },
+    "pagination": {
+      "pageInfo": "Trang {current}/{totalPages}",
+      "selectedRows": "{selected} trên {total} dòng được chọn"
+    },
+    "chatErrors": {
+      "missingBookingRoom": "Không tìm thấy phòng đặt để mở chat.",
+      "unavailable": "Không thể mở chat lúc này."
+    },
+    "modal": {
+      "title": "Chi tiết Yêu cầu hỗ trợ",
+      "fields": {
+        "ticketId": "Mã yêu cầu",
+        "requestType": "Loại yêu cầu",
+        "room": "Phòng",
+        "bookingRoomCode": "Mã đặt phòng",
+        "priority": "Mức độ",
+        "status": "Trạng thái",
+        "content": "Nội dung",
+        "resolutionTime": "Thời gian xử lý"
+      },
+      "meta": {
+        "title": "Thông tin cập nhật",
+        "createdAt": "Ngày tạo",
+        "updatedAt": "Lần cập nhật cuối",
+        "updatedBy": "Người xử lý gần nhất"
+      },
+      "duration": {
+        "seconds": "giây",
+        "minutes": "phút",
+        "hours": "giờ",
+        "days": "ngày"
+      },
+      "actions": {
+        "close": "Đóng",
+        "message": "Trò chuyện",
+        "openingChat": "Đang mở...",
+        "confirm": "Xác nhận",
+        "complete": "Hoàn thành",
+        "processing": "Đang xử lý..."
+      }
+    }
+  },
+  "ServiceTypeFormDialog": {
+    "titleAdd": "Thêm loại dịch vụ mới",
+    "titleEdit": "Thông tin loại dịch vụ",
+    "cancel": "Huỷ",
+    "create": "Tạo",
+    "save": "Lưu",
+    "meta": {
+      "title": "Thông tin cập nhật",
+      "createdBy": "Người tạo:",
+      "updatedBy": "Người sửa gần nhất:",
+      "createdAt": "Ngày tạo:",
+      "updatedAt": "Lần cập nhật cuối:"
+    },
+    "name": "Tên loại dịch vụ",
+    "namePlaceholder": "Nhập tên loại dịch vụ",
+    "department": "Bộ phận",
+    "departmentPlaceholder": "Chọn bộ phận",
+    "departments": {
+      "housekeeping": "Buồng phòng",
+      "reception": "Lễ tân",
+      "maintenance": "Bảo trì",
+      "customerCare": "Chăm sóc khách hàng"
+    },
+    "successCreate": "Đã thêm loại dịch vụ thành công!",
+    "successUpdate": "Đã cập nhật loại dịch vụ thành công!"
+  },
+  "DeleteServiceTypeDialog": {
+    "confirmAll": "Bạn có chắc chắn muốn xóa loại dịch vụ đã chọn?",
+    "confirmSinglePrefix": "Bạn có chắc chắn muốn xóa",
+    "confirmButton": "Có, xoá!",
+    "cancelButton": "Không, huỷ",
+    "successAll": "Bạn đã xóa các loại dịch vụ đã chọn thành công!",
+    "successSinglePrefix": "Bạn đã xóa",
+    "successSingleSuffix": "thành công!"
+  },
+  "ServiceListPage": {
+    "title": "Danh sách dịch vụ",
+    "searchPlaceholder": "Tìm kiếm tên dịch vụ",
+    "actions": {
+      "create": "Thêm mới",
+      "save": "Lưu",
+      "cancel": "Hủy"
+    },
+    "filters": {
+      "status": "Trạng thái",
+      "type": "Loại dịch vụ"
+    },
+    "statuses": {
+      "active": "Đang hoạt động",
+      "inactive": "Ngừng hoạt động"
+    },
+    "table": {
+      "name": "Tên dịch vụ",
+      "type": "Loại dịch vụ",
+      "price": "Giá",
+      "unit": "Đơn vị",
+      "status": "Trạng thái",
+      "action": "Thao tác"
+    },
+    "modal": {
+      "createTitle": "Thêm dịch vụ",
+      "editTitle": "Chỉnh sửa dịch vụ"
+    },
+    "form": {
+      "name": "Tên dịch vụ",
+      "namePlaceholder": "Nhập tên dịch vụ",
+      "type": "Loại dịch vụ",
+      "typePlaceholder": "Chọn loại dịch vụ",
+      "price": "Giá",
+      "unit": "Đơn vị",
+      "unitPlaceholder": "Nhập đơn vị",
+      "status": "Trạng thái"
+    }
+  },
+  "ProfilePage": {
+    "back": "Quay lại",
+    "title": "Thông tin tài khoản",
+    "changePassword": "Đổi mật khẩu",
+    "editAvatar": "Sửa",
+    "deleteAvatar": "Xóa",
+    "status": "Tình trạng",
+    "active": "Đang hoạt động",
+    "inactive": "Tạm ngưng",
+    "personalInfo": "Thông tin cá nhân",
+    "firstName": "Họ",
+    "lastName": "Tên",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "workInfo": "Thông tin công việc",
+    "staffCode": "Mã nhân viên",
+    "username": "Username",
+    "role": "Vai trò",
+    "department": "Bộ phận",
+    "save": "Lưu thay đổi",
+    "cancel": "Hủy"
+  },
+  "BranchPage": {
+    "title": "Quản lý chi nhánh",
+    "subtitle": "Quản lý các địa điểm hoạt động và trạng thái chi nhánh",
+    "searchPlaceholder": "Tìm kiếm tên hoặc địa chỉ chi nhánh",
+    "empty": "Không có chi nhánh nào",
+    "location": "Khu vực",
+    "status": "Trạng thái",
+    "statuses": {
+      "active": "Đang hoạt động",
+      "inactive": "Tạm ngưng"
+    },
+    "filters": {
+      "cityPlaceholder": "Lọc theo tỉnh / thành",
+      "statusAll": "Tất cả trạng thái"
+    },
+    "actions": {
+      "create": "Thêm chi nhánh",
+      "view": "Xem chi tiết",
+      "delete": "Xóa",
+      "cancel": "Hủy",
+      "save": "Lưu",
+      "resetFilters": "Đặt lại bộ lọc"
+    },
+    "delete": {
+      "title": "Xóa chi nhánh",
+      "description": "Bạn có chắc muốn xóa chi nhánh này không?",
+      "confirm": "Xóa"
+    },
+    "locations": {
+      "loadError": "Không tải được danh sách tỉnh thành"
+    },
+    "form": {
+      "name": "Tên chi nhánh",
+      "namePlaceholder": "Nhập tên chi nhánh",
+      "address": "Địa chỉ",
+      "addressPlaceholder": "Nhập địa chỉ chi nhánh",
+      "city": "Tỉnh / thành",
+      "cityPlaceholder": "Chọn tỉnh / thành",
+      "ward": "Phường / xã",
+      "wardPlaceholder": "Chọn phường / xã",
+      "status": "Trạng thái hoạt động"
+    },
+    "meta": {
+      "title": "Thông tin cập nhật",
+      "createdBy": "Người tạo",
+      "updatedBy": "Người sửa gần nhất",
+      "createdAt": "Ngày tạo",
+      "updatedAt": "Lần cập nhật cuối"
+    },
+    "modal": {
+      "title": {
+        "create": "Thêm chi nhánh",
+        "edit": "Thông tin chi nhánh"
+      }
+    }
+  },
+  "SettingsPage": {
+    "logo": "Logo khách sạn",
+    "title": "Thông tin khách sạn",
+    "openSettings": "Cài đặt",
+    "hotelInfo": "Thông tin khách sạn",
+    "hotelName": "Tên khách sạn",
+    "phone": "Số điện thoại",
+    "city": "Địa điểm",
+    "cityPlaceholder": "Chọn địa điểm",
+    "loadingCities": "Đang tải danh sách địa điểm...",
+    "provincesLoadError": "Không tải được danh sách địa điểm",
+    "chatQualityAgentApiKey": "Chat quality agent API Key",
+    "chatQualityAgentApiKeyHint": "Lấy API Key mới rồi bấm Copy để dùng ở nơi khác. Key sẽ không hiển thị trên màn hình.",
+    "chatQualityAgentApiKeyPlaceholder": "Bấm \"Lấy API Key\" để tạo key",
+    "getApiKey": "Lấy API Key",
+    "generatingApiKey": "Đang tạo...",
+    "copyApiKey": "Copy API Key",
+    "apiKeyGenerated": "Đã tạo API Key mới",
+    "apiKeyCopied": "Đã copy API Key",
+    "apiKeyGenerateError": "Không thể tạo API Key",
+    "apiKeyCopyError": "Copy API Key thất bại",
+    "editLogo": "Sửa",
+    "deleteLogo": "Xóa",
+    "save": "Lưu thay đổi",
+    "cancel": "Hủy",
+    "modal": {
+      "title": "Cài đặt email",
+      "description": "Quản lý kết nối IMAP và các pattern đọc email cho tenant hiện tại.",
+      "patternHint": "Mỗi dòng là một pattern riêng.",
+      "patternPlaceholder": "Nhập mỗi pattern trên một dòng",
+      "submit": "Lưu cài đặt",
+      "submitting": "Đang lưu...",
+      "cancel": "Đóng",
+      "sections": {
+        "imap": {
+          "title": "Kết nối IMAP",
+          "description": "Điền đầy đủ thông tin IMAP nếu muốn đồng bộ hoặc parse email."
+        },
+        "emailBooking": {
+          "title": "Pattern email booking"
+        },
+        "emailCancel": {
+          "title": "Pattern email hủy"
+        }
+      },
+      "imap": {
+        "host": "IMAP host",
+        "hostPlaceholder": "Ví dụ: imap.gmail.com",
+        "port": "IMAP port",
+        "portPlaceholder": "Ví dụ: 993",
+        "user": "IMAP user",
+        "userPlaceholder": "Nhập tài khoản email",
+        "password": "IMAP password",
+        "passwordPlaceholder": "Nhập mật khẩu email",
+        "passwordHint": "Mật khẩu là bắt buộc khi bạn dùng IMAP hoặc khai báo pattern email.",
+        "passwordSavedHint": "Mật khẩu hiện tại đang được lưu. Để trống nếu muốn giữ nguyên, chỉ nhập khi muốn thay đổi."
+      },
+      "emailBooking": {
+        "fields": {
+          "subject": "Tiêu đề email",
+          "bookingNumber": "Mã đặt phòng",
+          "guest": "Khách hàng",
+          "checkIn": "Ngày nhận phòng",
+          "checkOut": "Ngày trả phòng",
+          "bookedOn": "Ngày đặt",
+          "roomsBooked": "Phòng đã đặt",
+          "source": "Nguồn",
+          "totalNetPrice": "Tổng net",
+          "totalSellPrice": "Tổng bán",
+          "guestNumber": "Số lượng khách",
+          "roomNumber": "Số lượng phòng",
+          "promotionName": "Tên khuyến mãi",
+          "mealPlan": "Gói ăn",
+          "bookingConditions": "Điều kiện đặt phòng",
+          "bookingPreferences": "Yêu cầu đặt phòng"
+        }
+      },
+      "emailCancel": {
+        "fields": {
+          "subject": "Tiêu đề email hủy",
+          "bodies": "Nội dung email hủy"
+        }
+      },
+      "errors": {
+        "load": "Không tải được cài đặt tenant",
+        "submit": "Không thể cập nhật cài đặt tenant",
+        "imapRequired": "Cần điền đầy đủ cấu hình IMAP để sử dụng các pattern email.",
+        "portInteger": "IMAP port phải là số nguyên",
+        "unknownField": "trường dữ liệu"
+      }
+    }
+  },
+  "ChangePasswordModal": {
+    "title": "Đổi mật khẩu",
+    "currentPassword": "Mật khẩu hiện tại",
+    "newPassword": "Mật khẩu mới",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "currentPasswordPlaceholder": "Nhập mật khẩu hiện tại",
+    "newPasswordPlaceholder": "Nhập mật khẩu mới",
+    "confirmPasswordPlaceholder": "Xác nhận mật khẩu mới",
+    "cancel": "Hủy",
+    "processing": "Đang xử lý...",
+    "submit": "Đổi mật khẩu"
+  }
+}

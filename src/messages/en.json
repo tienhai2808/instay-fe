@@ -1,0 +1,2428 @@
+{
+  "HomePage": {
+    "title": "Welcome to Instay",
+    "description": "The perfect place for your stay.",
+    "header": {
+      "notifications": "Notifications",
+      "switchToEnglish": "Switch to English",
+      "switchToVietnamese": "Switch to Vietnamese",
+      "searchPlaceholder": "Search",
+      "fallbackTenantName": "Instay Hotel",
+      "fallbackTenantPhone": "No phone number",
+      "goToFeedbacks": "Open feedback page",
+      "notificationPanel": {
+        "title": "Your notifications",
+        "close": "Close",
+        "empty": "You do not have any notifications yet.",
+        "unread": "Unread",
+        "loading": "Loading more..."
+      }
+    },
+    "latestNews": {
+      "title": "Latest News",
+      "empty": "No news available right now.",
+      "fallbackTitle": "News",
+      "excerptEmpty": "No summary available.",
+      "unknownDate": "Unknown date",
+      "justNow": "Just now"
+    },
+    "serviceTypes": {
+      "title": "Service Types",
+      "viewAll": "View all",
+      "collapse": "Collapse",
+      "empty": "No service type found."
+    },
+    "popularServices": {
+      "title": "Popular Services",
+      "empty": "No matching service found."
+    },
+    "todayPromotions": {
+      "title": "Today's Promotions",
+      "empty": "No matching promotion found."
+    }
+  },
+  "CollectionsPage": {
+    "fallbackTitle": "Services",
+    "empty": "No matching service found."
+  },
+  "ProductDetailsPage": {
+    "fallbackTitle": "Service Details",
+    "descriptionTitle": "Description service",
+    "imageEmpty": "This service has no images yet.",
+    "descriptionEmpty": "This service has no description yet.",
+    "priceLabel": "Price",
+    "promotionLabel": "Promotion",
+    "promotionNone": "None",
+    "bookService": "Book Service",
+    "orderCreatedSuccess": "Service order created successfully.",
+    "orderModal": {
+      "title": "Book Service",
+      "serviceLabel": "Service",
+      "quantityLabel": "Quantity",
+      "estimatedAtLabel": "Estimated time",
+      "estimatedAtRequired": "Please select an estimated time.",
+      "estimatedAtInvalid": "Estimated time is invalid.",
+      "guestNoteLabel": "Note",
+      "guestNotePlaceholder": "Enter note",
+      "submit": "Book Service",
+      "submitting": "Processing..."
+    }
+  },
+  "NewsDetailsPage": {
+    "fallbackTitle": "News Details",
+    "publishedAtEmpty": "Unknown publish time",
+    "justNow": "Just now",
+    "imageEmpty": "This news item has no image yet.",
+    "excerptTitle": "Summary",
+    "excerptEmpty": "This news item has no summary yet.",
+    "contentTitle": "Content",
+    "contentEmpty": "This news item has no content yet."
+  },
+  "RequestsPage": {
+    "title": "Send Request",
+    "supportCategoryTitle": "Choose Request Type",
+    "supportCategoryEmpty": "No request type available.",
+    "contentTitle": "Request Details",
+    "contentPlaceholder": "Enter your request",
+    "priorityTitle": "Priority Level",
+    "submit": "Send Request",
+    "submitting": "Submitting...",
+    "submitSuccess": "Request sent successfully.",
+    "ticketListTitle": "Request List",
+    "ticketListEmpty": "You do not have any requests yet.",
+    "ticketFields": {
+      "content": "Content",
+      "priority": "Priority"
+    },
+    "actions": {
+      "message": "Message",
+      "openingChat": "Opening...",
+      "cancel": "Cancel request",
+      "cancelConfirm": "Are you sure you want to cancel this request?",
+      "keepRequest": "Keep request"
+    },
+    "ticketStatuses": {
+      "pending": "Pending",
+      "done": "Done",
+      "resolved": "Resolved",
+      "accepted": "Accepted",
+      "cancelled": "Cancelled",
+      "unknown": "Unknown"
+    },
+    "chatErrors": {
+      "missingSupportCategory": "Cannot open chat because request type is missing.",
+      "unavailable": "Unable to open chat right now."
+    },
+    "errors": {
+      "supportCategoryRequired": "Please choose a request type.",
+      "contentRequired": "Please enter request details.",
+      "priorityRequired": "Please choose a priority level."
+    },
+    "priorityDescriptions": {
+      "urgent": {
+        "label": "1 - Urgent",
+        "description": "Handled within 1 hour from confirmation"
+      },
+      "high": {
+        "label": "2 - Fast",
+        "description": "Handled within 2-3 hours from confirmation"
+      },
+      "medium": {
+        "label": "3 - Standard",
+        "description": "Handled within 3-5 hours from confirmation"
+      },
+      "low": {
+        "label": "4 - Low",
+        "description": "Handled within 6-12 hours from confirmation"
+      }
+    }
+  },
+  "FeedbacksPage": {
+    "title": "Reviews",
+    "featuredReviewsTitle": "Featured Reviews",
+    "featuredReviewsEmpty": "No reviews yet.",
+    "reviewAuthor": "Guest #{id}",
+    "emptyContent": "No review content provided.",
+    "writeReviewTitle": "Write a review",
+    "contentPlaceholder": "Write your review",
+    "submit": "Submit review",
+    "submitting": "Submitting...",
+    "submitSuccess": "Review submitted successfully.",
+    "updateSuccess": "Review updated successfully.",
+    "actions": {
+      "previous": "Previous review",
+      "next": "Next review"
+    },
+    "errors": {
+      "starRequired": "Please select a star rating.",
+      "contentRequired": "Please enter review content."
+    }
+  },
+  "OrdersPage": {
+    "title": "Your orders",
+    "empty": "You do not have any service orders yet.",
+    "serviceFallback": "Service",
+    "emptyNote": "None",
+    "fields": {
+      "quantity": "Quantity",
+      "note": "Note",
+      "guestNote": "Guest note",
+      "staffNote": "Staff note",
+      "cancelReason": "Cancel reason",
+      "total": "Total"
+    },
+    "statuses": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "cancelled": "Cancelled",
+      "unknown": "Unknown"
+    },
+    "actions": {
+      "cancel": "Cancel order",
+      "reorder": "Order again",
+      "message": "Message",
+      "openingChat": "Opening..."
+    },
+    "chatErrors": {
+      "missingService": "Cannot open chat because service information is missing.",
+      "unavailable": "Unable to open chat right now."
+    },
+    "cancelModal": {
+      "title": "Cancel service order",
+      "confirmText": "Are you sure you want to cancel this service order?",
+      "serviceLabel": "Service",
+      "reasonLabel": "Cancel reason (optional)",
+      "reasonPlaceholder": "Enter cancel reason",
+      "submit": "Confirm cancel",
+      "submitting": "Processing..."
+    }
+  },
+  "MessagesPage": {
+    "title": "Messages",
+    "searchPlaceholder": "Search",
+    "departmentFallback": "Support team",
+    "defaultPreview": "Department: How can we help you...",
+    "prefixes": {
+      "hotel": "Hotel: ",
+      "you": "You: ",
+      "customer": "Guest: "
+    },
+    "composerPlaceholder": "Type a message",
+    "staffTitle": "Staff",
+    "composer": {
+      "attach": "Attach",
+      "emoji": "Emoji",
+      "send": "Send",
+      "chooseImage": "Choose image",
+      "chooseFile": "Choose file",
+      "takePhoto": "Take photo",
+      "removeAttachment": "Remove attachment",
+      "emojiAriaLabel": "Emoji {emoji}",
+      "fileTooLarge": "The file exceeds the {sizeMb}MB limit.",
+      "sendFailed": "Unable to send message. Please try again.",
+      "sendSuccess": "Sent successfully.",
+      "replyingTo": "Replying to {name}",
+      "cancelReply": "Cancel reply"
+    },
+    "replyTitles": {
+      "guest": {
+        "department": "Replying to department",
+        "you": "Replying to you",
+        "self": "Replying to yourself"
+      },
+      "staff": {
+        "you": "Replying to your message",
+        "guest": "Replying to guest message",
+        "department": "Replying to {name}"
+      }
+    },
+    "emptyPreview": "How can we help you...",
+    "empty": "You do not have any conversations yet.",
+    "loadingMore": "Loading more...",
+    "preview": {
+      "departmentMessage": "How can we help you?"
+    },
+    "detail": {
+      "defaultHeader": "Conversation",
+      "placeholder": "Conversation detail screen is being prepared.",
+      "placeholderWithId": "Conversation detail screen #{id} is being prepared."
+    },
+    "staff": {
+      "placeholderTitle": "Pick a conversation",
+      "placeholderDescription": "Your sidebar is ready. Open any room conversation to start supporting guests.",
+      "placeholderHint": "Tap a sticker for fun",
+      "emptyChat": "No messages yet.",
+      "previewMissingBookingRoom": "Booking room information was not found.",
+      "readonlyHint": "This account is view-only in realtime and cannot interact."
+    },
+    "typing": {
+      "staffList": "{name} is typing...",
+      "guestList": "{name} is typing..."
+    },
+    "attachments": {
+      "image": "[Image]",
+      "video": "[Video]",
+      "audio": "[Audio]",
+      "file": "[Attachment]"
+    },
+    "time": {
+      "now": "Now"
+    }
+  },
+  "Common": {
+    "language": "Language",
+    "vietnamese": "Vietnamese",
+    "english": "English",
+    "acknowledge": "Got it",
+    "viewNow": "View now"
+  },
+  "NotFoundPage": {
+    "staff": {
+      "code": "404",
+      "title": "Staff page not found",
+      "description": "The requested resource does not exist or has been removed.",
+      "primaryAction": "Go to default page"
+    },
+    "guest": {
+      "code": "404",
+      "title": "Guest page not found",
+      "description": "Sorry, the page you requested is not available.",
+      "primaryAction": "Go to default page"
+    },
+    "root": {
+      "code": "404",
+      "title": "Page not found",
+      "description": "We could not find what you were looking for.",
+      "primaryAction": "Go to default page"
+    },
+    "global": {
+      "code": "404",
+      "title": "Global page not found",
+      "description": "This URL does not match any route in the application.",
+      "primaryAction": "Go to default page",
+      "metadataTitle": "404 - Not Found",
+      "metadataDescription": "The page you are looking for does not exist."
+    }
+  },
+  "Header": {
+    "greeting": "Hello",
+    "title": "INSTAY Smart Hotel Management System",
+    "defaultUser": "User",
+    "logout": "Log out"
+  },
+  "AuthLayout": {
+    "welcome": "Welcome to Instay",
+    "headingLine1": "Smart Hotel Management",
+    "headingLine2": "System",
+    "features": {
+      "dashboard": "Overview dashboard",
+      "booking": "Centralized booking management",
+      "roomService": "Room and service management",
+      "customer": "Customer connection"
+    }
+  },
+  "LoginPage": {
+    "usernamePlaceholder": "Username",
+    "passwordPlaceholder": "Password",
+    "remember": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "submit": "Login",
+    "needHelp": "Need help?",
+    "contact": "Contact us"
+  },
+  "ForgotPasswordPage": {
+    "title": "Forgot Password",
+    "subtitle": "Enter email to recover your password",
+    "emailPlaceholder": "Email",
+    "hint": "We will send a password reset link to your email.",
+    "submit": "Send OTP",
+    "backToLogin": "Back to login"
+  },
+  "VerifyOtpPage": {
+    "title": "Verify OTP",
+    "subtitle": "Please enter the OTP sent to your email.",
+    "expiresIn": "OTP expires in",
+    "otpLabel": "Enter OTP",
+    "verify": "Verify",
+    "resend": "Resend OTP",
+    "resendWithCooldown": "Resend OTP ({seconds}s)"
+  },
+  "NewPasswordPage": {
+    "title": "Reset Password",
+    "subtitle": "Create a new password for your account.",
+    "hint": "Your password should contain at least 6 characters for better security.",
+    "newPasswordPlaceholder": "New password",
+    "confirmPasswordPlaceholder": "Confirm password",
+    "submit": "Confirm"
+  },
+  "Sidebar": {
+    "overview": "Dashboard",
+    "room-management": "Room management",
+    "booking-management": "Booking management",
+    "bookings": "Bookings",
+    "room-types": "Room types",
+    "rooms": "Room list",
+    "service-management": "Service management",
+    "service-types": "Service types",
+    "services": "Service list",
+    "events": "Events",
+    "order-services": "Order services",
+    "request-management": "Request management",
+    "support-tickets": "Support ticket list",
+    "support-categories": "Support category",
+    "customers": "Customers",
+    "staffs": "Staffs",
+    "departments": "Departments",
+    "branches": "Branches",
+    "reviews": "Reviews",
+    "chats": "Chats",
+    "accommodation": "Accommodation",
+    "calendar": "Pricing calendar",
+    "price-calculator": "Price calculation",
+    "settings": "Settings",
+    "logout": "Log out"
+  },
+  "CalendarPage": {
+    "title": "Pricing Calendar",
+    "subtitle": "Manage pricing tags for each date across 2 years.",
+    "actions": {
+      "update": "Update",
+      "updating": "Updating...",
+      "reset": "Reset draft",
+      "addTag": "Add tag",
+      "save": "Save",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "delete": "Delete",
+      "paintRow": "Paint this week row",
+      "paintColumn": "Paint this weekday column"
+    },
+    "tags": {
+      "title": "Pricing tags",
+      "activeTool": "Active tool",
+      "clearTool": "Eraser",
+      "addPlaceholder": "Enter a new pricing tag name",
+      "editPlaceholder": "Edit pricing tag name",
+      "empty": "No pricing tags yet.",
+      "delete": {
+        "title": "Delete pricing tag",
+        "description": "Are you sure you want to delete this pricing tag?",
+        "confirm": "Delete"
+      }
+    },
+    "calendar": {
+      "today": "Today",
+      "noTag": "No tag",
+      "outsideMonth": "Outside current month",
+      "monthEmpty": "No available dates in this month."
+    },
+    "status": {
+      "dirty": "You have unsaved changes.",
+      "synced": "All changes are synced.",
+      "emptyPayload": "Assign at least one date to a pricing tag before updating."
+    },
+    "empty": {
+      "calendar": "No pricing calendar data available."
+    }
+  },
+  "PriceCalculatorPage": {
+    "badge": "Price Calculator",
+    "title": "Price Calculator",
+    "subtitle": "Pick room type, date range, and room quantity to estimate quickly.",
+    "labels": {
+      "screen": "Result screen",
+      "roomTypes": "Room type keypad",
+      "dateRange": "Date range",
+      "quantity": "Room quantity",
+      "selectedRoom": "Selected room type"
+    },
+    "placeholders": {
+      "fromDate": "From date",
+      "toDate": "To date",
+      "quantity": "Enter room quantity"
+    },
+    "actions": {
+      "calculate": "Calculate",
+      "calculating": "Calculating..."
+    },
+    "states": {
+      "selectRoomType": "Please select a room type first.",
+      "selectDateRange": "Please choose a valid date range.",
+      "invalidDateRange": "Check-out date must be after check-in date.",
+      "invalidQuantity": "Room quantity must be greater than 0.",
+      "noRoomTypes": "No room types available.",
+      "idleTitle": "Ready to calculate",
+      "idleHint": "Press Calculate to show total days, total price, and average price.",
+      "loading": "Processing",
+      "errorTitle": "Calculation error",
+      "errorHint": "This calculation failed. Please try again."
+    },
+    "result": {
+      "days": "Total days",
+      "total": "Total price",
+      "average": "Average price",
+      "flash": "Result is returned by the current pricing engine."
+    }
+  },
+  "Validation": {
+    "required": "{field} is required",
+    "invalidEmail": "Invalid email address",
+    "invalidPhone": "Invalid phone number",
+    "minChars": "{field} must be at least {min} characters",
+    "exactChars": "{field} must be exactly {length} characters",
+    "greaterThanZero": "{field} must be greater than 0",
+    "passwordMismatch": "Password confirmation does not match",
+    "fields": {
+      "username": "Username",
+      "password": "Password",
+      "email": "Email",
+      "phone": "Phone number",
+      "hotelName": "Hotel name",
+      "city": "Location",
+      "ward": "Ward / commune",
+      "branchName": "Branch name",
+      "branchAddress": "Branch address",
+      "imapHost": "IMAP host",
+      "imapPort": "IMAP port",
+      "imapUser": "IMAP user",
+      "imapPassword": "IMAP password",
+      "emailBookingSubject": "Email subject",
+      "emailBookingBookingNumber": "Booking number",
+      "emailBookingGuest": "Guest",
+      "emailBookingCheckIn": "Check-in date",
+      "emailBookingCheckOut": "Check-out date",
+      "emailBookingBookedOn": "Booked on",
+      "emailBookingRoomsBooked": "Rooms booked",
+      "emailBookingSource": "Source",
+      "emailBookingTotalNetPrice": "Total net price",
+      "emailBookingTotalSellPrice": "Total sell price",
+      "emailBookingGuestNumber": "Guest count",
+      "emailBookingRoomNumber": "Room count",
+      "emailBookingPromotionName": "Promotion name",
+      "emailBookingMealPlan": "Meal plan",
+      "emailBookingBookingConditions": "Booking conditions",
+      "emailBookingBookingPreferences": "Booking preferences",
+      "emailCancelSubject": "Cancellation email subject",
+      "emailCancelBodies": "Cancellation email body",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "oldPassword": "Current password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password",
+      "serviceTypeName": "Service type name",
+      "supportCategoryName": "Support category name",
+      "department": "Department",
+      "roomTypeName": "Room type name",
+      "roomPrice": "Room price",
+      "floor": "Floor",
+      "roomName": "Room name",
+      "roomNumber": "Room number",
+      "customerName": "Customer name",
+      "guestCount": "Guest count",
+      "guestType": "Guest type",
+      "bookingNumber": "Booking number",
+      "source": "Source",
+      "checkIn": "Check-in time",
+      "checkOut": "Check-out time",
+      "bookingStatus": "Booking status",
+      "totalSellPrice": "Total sell price",
+      "totalNetPrice": "Total net price",
+      "checkInDate": "Check-in date",
+      "checkOutDate": "Check-out date",
+      "serviceName": "Service name",
+      "serviceType": "Service type",
+      "servicePrice": "Service price",
+      "serviceDiscountType": "Discount type",
+      "serviceDiscountValue": "Discount value",
+      "serviceDiscountStartAt": "Discount start time",
+      "serviceDiscountEndAt": "Discount end time",
+      "serviceDescription": "Service description",
+      "serviceImages": "Service images",
+      "eventTitle": "Event title",
+      "eventExcerpt": "Event excerpt",
+      "eventContent": "Event content",
+      "eventThumbnail": "Event thumbnail",
+      "guestFullName": "Full name",
+      "dateOfBirth": "Date of birth",
+      "nationality": "Nationality",
+      "passportNumber": "Passport number",
+      "otp": "OTP",
+      "staffNote": "Staff note",
+      "pricingTag": "Pricing tag",
+      "pricingDirection": "Increase/decrease option",
+      "pricingType": "Pricing type",
+      "pricingValue": "Adjustment value"
+    }
+  },
+  "DashboardPage": {
+    "title": "Dashboard",
+    "tabs": {
+      "overview": "Overview",
+      "operation": "Operation",
+      "review": "Review"
+    },
+    "filters": {
+      "fromDate": "From date",
+      "toDate": "To date",
+      "presets": {
+        "last_7_days": "Last 7 days",
+        "last_30_days": "Last 30 days",
+        "last_90_days": "Last 90 days",
+        "this_week": "This week",
+        "this_month": "This month",
+        "this_year": "This year",
+        "last_week": "Last week",
+        "last_month": "Last month",
+        "last_year": "Last year",
+        "custom": "Custom"
+      }
+    },
+    "cards": {
+      "compareLabel": "Compared to previous period",
+      "totalRevenue": {
+        "title": "Total revenue"
+      },
+      "occupancyRate": {
+        "title": "Occupancy rate"
+      },
+      "cancellationRate": {
+        "title": "Cancellation rate"
+      },
+      "averageDaysStay": {
+        "title": "Average stay days"
+      }
+    },
+    "charts": {
+      "revenueOverTime": {
+        "title": "Revenue overview",
+        "allRoomTypes": "All room types",
+        "roomTypePlaceholder": "Select room type"
+      },
+      "roomTypeRevenue": {
+        "title": "Revenue by room type"
+      },
+      "sourceRevenue": {
+        "title": "Booking sources"
+      }
+    },
+    "table": {
+      "title": "Recent bookings",
+      "actions": {
+        "viewAllBookings": "View all bookings"
+      },
+      "columns": {
+        "bookingId": "Booking ID",
+        "customerName": "Customer Name",
+        "roomId": "Room ID",
+        "checkIn": "Check-in",
+        "checkOut": "Check-out",
+        "status": "Status"
+      }
+    },
+    "statuses": {
+      "confirmed": "Confirmed",
+      "checked-in": "Checked-in",
+      "checked-out": "Checked-out",
+      "cancelled": "Cancelled",
+      "unknown": "Unknown"
+    },
+    "empty": {
+      "noChartData": "No chart data available.",
+      "noBookings": "No booking data available.",
+      "noSupportTickets": "No support ticket data available."
+    },
+    "operation": {
+      "cards": {
+        "todayCheckIn": {
+          "title": "Today check-in"
+        },
+        "todayCheckOut": {
+          "title": "Today check-out"
+        },
+        "pendingRequests": {
+          "title": "Pending requests"
+        },
+        "inProgressRequests": {
+          "title": "In-progress requests"
+        },
+        "unreadMessages": {
+          "title": "Unread messages"
+        }
+      },
+      "charts": {
+        "guestNational": {
+          "title": "Guests by nationality",
+          "tooltipGuests": "{count} guests"
+        },
+        "serviceTypeCount": {
+          "title": "Service order share by type",
+          "tooltipOrders": "{count} orders ({percent}%)"
+        },
+        "supportTicketTime": {
+          "title": "Support request resolution time",
+          "averageLabel": "Average"
+        }
+      },
+      "table": {
+        "title": "Recent support tickets",
+        "actions": {
+          "viewAllSupportTickets": "View all tickets"
+        },
+        "columns": {
+          "requestType": "Request type",
+          "room": "Room",
+          "time": "Time",
+          "status": "Status",
+          "completedAt": "Completion time"
+        },
+        "duration": {
+          "seconds": "seconds",
+          "minutes": "minutes",
+          "hours": "hours"
+        }
+      },
+      "statuses": {
+        "pending": "Pending",
+        "accepted": "In progress",
+        "done": "Done",
+        "cancelled": "Cancelled"
+      }
+    },
+    "review": {
+      "cards": {
+        "totalReviews": {
+          "title": "Total reviews"
+        },
+        "averageStar": {
+          "title": "Average star"
+        },
+        "positiveRate": {
+          "title": "Positive rate"
+        },
+        "negativeRate": {
+          "title": "Negative rate"
+        }
+      },
+      "charts": {
+        "sentimentTime": {
+          "title": "Sentiment trend over time"
+        },
+        "sentimentCount": {
+          "title": "Sentiment distribution"
+        },
+        "categoryCount": {
+          "title": "Reviews by category",
+          "tooltipReviews": "{count} reviews"
+        },
+        "categorySentiment": {
+          "title": "Sentiment by category"
+        },
+        "shared": {
+          "tooltipCountPercent": "{count} reviews ({percent}%)"
+        }
+      },
+      "sentiments": {
+        "positive": "Positive",
+        "negative": "Negative",
+        "neutral": "Neutral"
+      },
+      "categories": {
+        "price": "Price",
+        "service": "Service",
+        "employee": "Employee",
+        "room": "Room",
+        "utility": "Utility",
+        "amenities": "Amenities"
+      }
+    }
+  },
+  "DepartmentPage": {
+    "title": "Department Management",
+    "subtitle": "Manage all departments in your hotel",
+    "searchPlaceholder": "Search by department name",
+    "empty": "No departments",
+    "staff": "Member",
+    "permissions": "Permissions",
+    "actions": {
+      "create": "Create department",
+      "view": "Details",
+      "cancel": "Cancel",
+      "close": "Close",
+      "save": "Save",
+      "delete": "Delete"
+    },
+    "delete": {
+      "title": "Delete department",
+      "description": "Are you sure you want to delete this department?",
+      "confirm": "Delete"
+    },
+    "modal": {
+      "title": {
+        "create": "Create department",
+        "edit": "Edit department",
+        "view": "Department details"
+      }
+    },
+    "meta": {
+      "title": "Update Information",
+      "createdBy": "Created by",
+      "updatedBy": "Last updated by",
+      "createdAt": "Created at",
+      "updatedAt": "Last updated at"
+    },
+    "form": {
+      "name": "Department name",
+      "namePlaceholder": "Enter department name",
+      "phone": "Phone",
+      "phonePlaceholder": "Enter phone number",
+      "phoneMaxLength": "Phone number must be at most 20 characters",
+      "description": "Description",
+      "descriptionPlaceholder": "Enter department description",
+      "permissions": "Permissions"
+    }
+  },
+  "StaffsPage": {
+    "title": "Staff Management",
+    "subtitle": "Manage all staff in your hotel",
+    "empty": "No staff found",
+    "actions": {
+      "create": "Create staff",
+      "search": "Search",
+      "edit": "Edit",
+      "delete": "Delete",
+      "deleteBatch": "Delete selected",
+      "save": "Save",
+      "cancel": "Cancel",
+      "more": "More"
+    },
+    "createPage": {
+      "title": "Create New Staff",
+      "subtitle": "Set up staff profile and permissions from the start"
+    },
+    "detailPage": {
+      "title": "Staff Details",
+      "back": "Back",
+      "resetPassword": "Reset password",
+      "errors": {
+        "notFound": "Staff not found"
+      },
+      "resetPasswordModal": {
+        "title": "Reset password",
+        "submit": "Reset password"
+      },
+      "meta": {
+        "title": "Update Information",
+        "createdBy": "Created by",
+        "updatedBy": "Updated by",
+        "createdAt": "Created at",
+        "updatedAt": "Updated at"
+      }
+    },
+    "form": {
+      "sections": {
+        "personalInfo": "Personal Information",
+        "accountInfo": "Account Information",
+        "workInfo": "Work Information"
+      },
+      "firstName": "First name",
+      "firstNamePlaceholder": "Enter first name",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Enter last name",
+      "email": "Email",
+      "emailPlaceholder": "Enter email",
+      "phone": "Phone number",
+      "phonePlaceholder": "Enter phone number",
+      "username": "Username",
+      "usernamePlaceholder": "Enter username",
+      "password": "Password",
+      "passwordPlaceholder": "Enter password",
+      "role": "Role",
+      "rolePlaceholder": "Select role",
+      "status": "Active status",
+      "department": "Department",
+      "departmentPlaceholder": "Select department (optional)",
+      "branches": "Branches",
+      "branchesPlaceholder": "Select branches",
+      "allBranches": "All branches",
+      "avatar": "Staff avatar",
+      "avatarUploadTitle": "Drag and drop an image here, or click to select",
+      "avatarUploadHint": "Supports JPG, PNG, WEBP - up to 1 file"
+    },
+    "filters": {
+      "searchPlaceholder": "Search by name, username or email",
+      "role": "Filter by role",
+      "department": "Filter by department",
+      "branch": "Filter by branch",
+      "status": "Filter by status"
+    },
+    "table": {
+      "staffName": "Staff name",
+      "role": "Role",
+      "department": "Department",
+      "branches": "Branches",
+      "status": "Status",
+      "createdAt": "Created at"
+    },
+    "roles": {
+      "admin": "Admin",
+      "staff": "Staff"
+    },
+    "statuses": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "pagination": {
+      "pageInfo": "Page {current}/{totalPages}",
+      "selectedRows": "{selected} of {total} rows selected"
+    },
+    "selection": {
+      "selected": "{count} selected"
+    },
+    "delete": {
+      "title": "Delete staff",
+      "description": "Are you sure you want to delete this staff?",
+      "confirm": "Delete"
+    }
+  },
+  "AccommodationPage": {
+    "title": "Accommodation List",
+    "subtitle": "Manage all accommodation information in your hotel",
+    "empty": "No accommodation records found",
+    "hint": {
+      "mustCreateFromBooking": "New accommodation registration must be created from the booking details page. This page only supports viewing, editing, and deleting."
+    },
+    "filters": {
+      "searchPlaceholder": "Search by guest name or passport number",
+      "fromDate": "From date",
+      "toDate": "To date"
+    },
+    "export": {
+      "button": "Export CSV",
+      "exporting": "Exporting...",
+      "options": {
+        "checkInAsc": "Check-in date ascending",
+        "checkInDesc": "Check-in date descending",
+        "checkOutAsc": "Check-out date ascending",
+        "checkOutDesc": "Check-out date descending"
+      },
+      "errors": {
+        "failed": "Failed to export data",
+        "emptyFile": "No data available for export"
+      }
+    },
+    "table": {
+      "guestName": "Full name",
+      "dob": "Date of birth",
+      "national": "Nationality",
+      "passport": "Passport number",
+      "room": "Room",
+      "checkIn": "Check in",
+      "checkOut": "Check out"
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save",
+      "cancel": "Cancel",
+      "more": "More"
+    },
+    "delete": {
+      "title": "Delete accommodation record",
+      "description": "Are you sure you want to delete this accommodation record?",
+      "confirm": "Delete"
+    },
+    "pagination": {
+      "pageInfo": "Page {current}/{totalPages}",
+      "selectedRows": "{selected} of {total} rows selected"
+    },
+    "modal": {
+      "title": "Accommodation Details"
+    },
+    "form": {
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Enter full name",
+      "dob": "Date of birth",
+      "dobPlaceholder": "Select date of birth",
+      "national": "Nationality",
+      "nationalPlaceholder": "Enter nationality",
+      "passport": "Passport number",
+      "passportPlaceholder": "Enter passport number",
+      "passportMax": "Passport number must be at most {max} characters"
+    },
+    "meta": {
+      "title": "Additional information",
+      "bookingRoom": "Room",
+      "bookingRoomCode": "Booking code",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "checkInDate": "Check-in date",
+      "checkOutDate": "Check-out date",
+      "createdBy": "Created by",
+      "updatedBy": "Last updated by",
+      "createdAt": "Created at",
+      "updatedAt": "Last updated at"
+    }
+  },
+  "CustomersPage": {
+    "title": "Customer List",
+    "subtitle": "View and export all customer records",
+    "empty": "No customers found",
+    "filters": {
+      "searchPlaceholder": "Search by phone number",
+      "fromDate": "From date",
+      "toDate": "To date"
+    },
+    "export": {
+      "button": "Export CSV",
+      "exporting": "Exporting...",
+      "options": {
+        "createdAtAsc": "Created date ascending",
+        "createdAtDesc": "Created date descending"
+      },
+      "errors": {
+        "failed": "Failed to export data",
+        "emptyFile": "No data available for export"
+      }
+    },
+    "table": {
+      "id": "Customer ID",
+      "phone": "Phone number",
+      "birthYear": "Birth year",
+      "gender": "Gender",
+      "createdAt": "Created at"
+    },
+    "gender": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Other"
+    },
+    "pagination": {
+      "pageInfo": "Page {current}/{totalPages}",
+      "selectedRows": "{selected} of {total} rows selected"
+    }
+  },
+  "RoomsPage": {
+    "title": "Room Management",
+    "subtitle": "Manage all rooms in your hotel",
+    "empty": "No rooms found",
+    "actions": {
+      "create": "Add room",
+      "edit": "Edit",
+      "delete": "Delete",
+      "deleteBatch": "Delete selected",
+      "save": "Save",
+      "cancel": "Cancel",
+      "more": "More"
+    },
+    "filters": {
+      "searchPlaceholder": "Search by room name",
+      "branch": "Filter by branch",
+      "roomType": "Filter by room type",
+      "floor": "Filter by floor"
+    },
+    "table": {
+      "roomName": "Room name",
+      "roomType": "Room type",
+      "branch": "Branch",
+      "floor": "Floor",
+      "createdAt": "Created at"
+    },
+    "pagination": {
+      "pageInfo": "Page {current}/{totalPages}",
+      "selectedRows": "{selected} of {total} rows selected"
+    },
+    "selection": {
+      "selected": "{count} selected"
+    },
+    "delete": {
+      "title": "Delete room",
+      "description": "Are you sure you want to delete this room?",
+      "confirm": "Delete"
+    },
+    "modal": {
+      "title": {
+        "create": "Add room",
+        "edit": "Room details"
+      }
+    },
+    "meta": {
+      "title": "Update Information",
+      "createdBy": "Created by",
+      "updatedBy": "Last updated by",
+      "createdAt": "Created at",
+      "updatedAt": "Last updated at"
+    },
+    "form": {
+      "name": "Room name",
+      "namePlaceholder": "Enter room name",
+      "roomType": "Room type",
+      "roomTypePlaceholder": "Select room type",
+      "floor": "Floor",
+      "floorPlaceholder": "Select floor"
+    },
+    "floors": {
+      "title": "Floor Management",
+      "subtitle": "Create, update, or delete floors right inside this form.",
+      "add": "Add floor",
+      "branchPlaceholder": "Select branch",
+      "addPlaceholder": "Enter new floor name",
+      "editPlaceholder": "Enter floor name",
+      "empty": "No floors yet",
+      "delete": {
+        "title": "Delete floor",
+        "description": "Are you sure you want to delete this floor?",
+        "confirm": "Delete"
+      }
+    }
+  },
+  "BookingsPage": {
+    "title": "Booking Management",
+    "subtitle": "Manage all bookings and booking sources in your hotel",
+    "searchPlaceholder": "Search by customer or booking ID",
+    "empty": "No bookings found",
+    "actions": {
+      "create": "New booking",
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save",
+      "cancel": "Hủy",
+      "confirm": "Confirm",
+      "more": "More"
+    },
+    "predict": {
+      "button": "Forecast",
+      "buttonAria": "Open booking cancellation forecast",
+      "card": {
+        "label": "AI forecast",
+        "title": "AI cancellation forecast",
+        "subtitle": "Quick cancellation prediction for this confirmed booking."
+      },
+      "modal": {
+        "title": "AI Cancellation Forecast",
+        "booking": "Booking {bookingNumber}",
+        "subtitle": "Prediction summary based on the current booking signals.",
+        "fields": {
+          "probability": "Cancellation probability",
+          "riskLevel": "Risk level",
+          "willCancel": "Likely to cancel"
+        },
+        "scaleLabel": "Cancellation probability scale",
+        "footnote": "Use this as a reference signal and combine it with direct guest follow-up.",
+        "suggestions": {
+          "low": "Low risk. Current follow-up flow is likely enough.",
+          "medium": "Medium risk. Consider proactively re-confirming with the guest.",
+          "high": "High risk. Prioritize guest outreach and prepare a backup plan.",
+          "unknown": "Not enough data yet to generate a clear recommendation."
+        }
+      },
+      "riskLevels": {
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "unknown": "Unknown"
+      },
+      "values": {
+        "yes": "Yes",
+        "no": "No",
+        "noData": "No prediction data available."
+      }
+    },
+    "createPage": {
+      "title": "Create New Booking",
+      "back": "Back"
+    },
+    "detailPage": {
+      "title": "Booking Details",
+      "back": "Back",
+      "actions": {
+        "selectRoom": "Select room",
+        "changeRoom": "Change room"
+      },
+      "locked": {
+        "byOfflineSource": "This booking is not from Direct (Offline) source, so booking information cannot be edited.",
+        "byCheckedIn": "This booking is already in Checked in status, so editing and room changes are not allowed.",
+        "byStatus": "This booking is no longer in Confirmed status, so editing and room changes are not allowed."
+      },
+      "statusActions": {
+        "title": "Update status",
+        "checkIn": "Check in",
+        "cancelBooking": "Cancel booking",
+        "checkOut": "Check out",
+        "checkInRoomMismatchHint": "Please select enough rooms to match booking room count before check-in."
+      },
+      "roomSection": {
+        "title": "Room information",
+        "empty": "No rooms have been selected for this booking yet.",
+        "room": "Room",
+        "preview": "Preview",
+        "showQr": "Show QR",
+        "showDetails": "View room details"
+      },
+      "pendingRoomSelection": {
+        "message": "You selected preview rooms but have not checked in yet. Are you sure you want to exit?",
+        "confirmExit": "Confirm exit"
+      },
+      "selectRoomModal": {
+        "title": "Select Room",
+        "room": "Room",
+        "placeholder": "Select available room",
+        "submit": "Select room",
+        "processing": "Processing..."
+      },
+      "changeRoomModal": {
+        "title": "Change Room",
+        "bookingRoom": "Booking room",
+        "bookingRoomPlaceholder": "Select booking room to change",
+        "newRoom": "New room",
+        "newRoomPlaceholder": "Select available room",
+        "currentRoom": "Current room",
+        "submit": "Save changes",
+        "processing": "Processing..."
+      },
+      "qrModal": {
+        "title": "Please scan the QR code",
+        "subtitle": "Elevate your experience!",
+        "missing": "No code available to generate QR.",
+        "code": "Booking room code",
+        "print": "Print QR"
+      },
+      "bookingRoomDetailsModal": {
+        "title": "Room information {room}",
+        "bookingNumber": "Booking number: {bookingNumber}",
+        "empty": "No data available",
+        "tabs": {
+          "stay": "Stay",
+          "services": "Services",
+          "support": "Support",
+          "review": "Review"
+        },
+        "sections": {
+          "stay": "Stay information",
+          "services": "Ordered services",
+          "support": "Support requests",
+          "review": "Review"
+        },
+        "actions": {
+          "add": "Add information",
+          "createServiceOrder": "Create service order",
+          "scanDocuments": "Scan documents",
+          "more": "More actions",
+          "edit": "Edit",
+          "delete": "Delete",
+          "cancel": "Cancel",
+          "requiresCheckedIn": "Booking must be checked in before using this action",
+          "close": "Close"
+        },
+        "table": {
+          "index": "No.",
+          "guestName": "Full name",
+          "dob": "Date of birth",
+          "national": "Nationality",
+          "passport": "Passport",
+          "room": "Room",
+          "checkIn": "Check-in",
+          "checkOut": "Check-out",
+          "service": "Service",
+          "quantity": "Quantity",
+          "unitPrice": "Unit price",
+          "totalPrice": "Total price",
+          "estimatedAt": "Estimated time",
+          "status": "Status",
+          "guestNote": "Guest note",
+          "category": "Support category",
+          "content": "Content",
+          "priority": "Priority",
+          "createdAt": "Created at"
+        },
+        "review": {
+          "reviewId": "Review ID",
+          "rating": "Rating",
+          "content": "Review content",
+          "empty": "No review yet"
+        },
+        "verification": {
+          "title": "Document verification",
+          "processing": "Creating session...",
+          "sessionId": "Session ID: {sessionId}",
+          "status": "Status: {status}",
+          "sessionCompleted": "Session {sessionId} completed: {status}",
+          "sessionFailed": "Session {sessionId} failed: {status}",
+          "errors": {
+            "missingUrl": "Missing verification URL from server."
+          }
+        },
+        "serviceOrderModal": {
+          "title": "Create service order",
+          "empty": "No services available in the system",
+          "emptyWithFilters": "No services match your filters",
+          "emptyByType": "No services in this type",
+          "untitledType": "Service type",
+          "untitledService": "Service",
+          "noThumbnail": "No image",
+          "filters": {
+            "searchPlaceholder": "Search by service name",
+            "serviceTypePlaceholder": "Filter by service type"
+          },
+          "actions": {
+            "backToList": "Back to service list",
+            "create": "Create service order",
+            "processing": "Processing..."
+          },
+          "detail": {
+            "description": "Service description",
+            "noDescription": "No description yet",
+            "active": "Active",
+            "inactive": "Inactive"
+          },
+          "form": {
+            "title": "Order service",
+            "fields": {
+              "quantity": "Quantity",
+              "totalPrice": "Total price",
+              "estimatedAt": "Estimated usage time",
+              "guestNote": "Guest note"
+            },
+            "placeholders": {
+              "quantity": "Enter quantity",
+              "estimatedAt": "Select estimated time",
+              "guestNote": "Enter guest note (optional)"
+            },
+            "validation": {
+              "guestNoteMin": "Guest note must have at least 1 character"
+            }
+          },
+          "labels": {
+            "name": "Service name",
+            "price": "Service price",
+            "discountType": "Discount type",
+            "discountValue": "Discount value",
+            "discountStartAt": "Discount start",
+            "discountEndAt": "Discount end"
+          },
+          "discountTypeOptions": {
+            "percent": "Percent",
+            "amount": "Amount"
+          }
+        },
+        "guestModal": {
+          "title": {
+            "create": "Add stay information",
+            "edit": "Update stay information"
+          },
+          "fields": {
+            "fullName": "Full name",
+            "dob": "Date of birth",
+            "national": "Nationality",
+            "passport": "Passport number"
+          },
+          "placeholders": {
+            "fullName": "Enter full name",
+            "dob": "Select date of birth",
+            "national": "Enter nationality",
+            "passport": "Enter passport number"
+          },
+          "actions": {
+            "create": "Create",
+            "update": "Save changes",
+            "processing": "Processing..."
+          },
+          "validation": {
+            "passportMax": "Passport number must not exceed {max} characters"
+          },
+          "delete": {
+            "title": "Delete stay information",
+            "description": "Are you sure you want to delete this stay information?",
+            "confirm": "Delete"
+          }
+        }
+      },
+      "deleteModal": {
+        "title": "Delete booking",
+        "description": "Are you sure you want to delete this booking?",
+        "confirm": "Delete"
+      },
+      "errors": {
+        "notFound": "Booking not found"
+      },
+      "meta": {
+        "title": "Update Information",
+        "createdBy": "Created by",
+        "updatedBy": "Last updated by",
+        "createdAt": "Created at",
+        "updatedAt": "Last updated at"
+      }
+    },
+    "filters": {
+      "source": "Source",
+      "branch": "Branch",
+      "roomType": "Room type",
+      "status": "Status",
+      "date": "Filter by date",
+      "fromDate": "From date",
+      "toDate": "To date"
+    },
+    "views": {
+      "list": "List view",
+      "chart": "Chart view",
+      "card": "Card view",
+      "comingSoon": "This view will be available soon."
+    },
+    "sources": {
+      "offline": "Direct (Offline)",
+      "add": "Add source",
+      "addPlaceholder": "Enter new source name",
+      "editPlaceholder": "Enter source name",
+      "empty": "No sources yet",
+      "delete": {
+        "title": "Delete source",
+        "description": "Are you sure you want to delete this source?",
+        "confirm": "Delete"
+      }
+    },
+    "table": {
+      "id": "Booking ID",
+      "source": "Source",
+      "customer": "Customer",
+      "room": "Room",
+      "checkin": "Check in",
+      "checkout": "Check out",
+      "status": "Status",
+      "action": "Action"
+    },
+    "pagination": "Showing {from} - {to} of {total}",
+    "statuses": {
+      "all": "All",
+      "confirmed": "Confirmed",
+      "cancelled": "Cancelled",
+      "checkedIn": "Checked in",
+      "checkedOut": "Checked out",
+      "unfilled": "Unfilled rooms"
+    },
+    "card": {
+      "source": "Source",
+      "branch": "Branch",
+      "roomType": "Room type",
+      "roomNumber": "Room quantity",
+      "rooms": "Rooms",
+      "checkIn": "Check in",
+      "checkOut": "Check out",
+      "total": "Total"
+    },
+    "chart": {
+      "roomTypeFallback": "Room type",
+      "roomFallback": "Room",
+      "tags": {
+        "all": "All",
+        "available": "Available",
+        "occupied": "Occupied",
+        "booked": "Booked"
+      }
+    },
+    "roomTimeline": {
+      "searchPlaceholder": "Search by room name",
+      "filters": {
+        "floor": "Floor"
+      },
+      "statuses": {
+        "all": "All",
+        "available": "Available",
+        "occupied": "Occupied",
+        "upcomingCheckin": "Upcoming check-in",
+        "overdueCheckout": "Overdue check-out",
+        "overdueCheckin": "Overdue check-in"
+      },
+      "badges": {
+        "clean": "Clean",
+        "notClean": "Not cleaned"
+      },
+      "labels": {
+        "price": "Price",
+        "checkIn": "Check-in",
+        "checkOut": "Check-out",
+        "sourceBooking": "Booking",
+        "roomUnit": "rooms"
+      },
+      "actions": {
+        "book": "Book room"
+      }
+    },
+    "form": {
+      "sections": {
+        "guestInfo": "Guest Information",
+        "stayInfo": "Stay Information",
+        "pricing": "Pricing Information",
+        "additionalInfo": "Additional Information"
+      },
+      "bookingNumber": "Booking number",
+      "bookingNumberPlaceholder": "Enter booking number",
+      "bookingNumberAuto": "Booking number will be generated automatically for direct source.",
+      "guestFullName": "Guest full name",
+      "guestFullNamePlaceholder": "Enter guest full name",
+      "guestEmail": "Guest email",
+      "guestEmailPlaceholder": "Enter guest email",
+      "guestPhone": "Guest phone",
+      "guestPhonePlaceholder": "Enter guest phone",
+      "branch": "Branch",
+      "branchPlaceholder": "Select branch",
+      "roomType": "Room type",
+      "roomTypePlaceholder": "Select room type",
+      "roomNumber": "Room number",
+      "roomNumberPlaceholder": "Enter room number",
+      "guestNumber": "Guest count",
+      "guestCount": "Count",
+      "guestCountPlaceholder": "Enter guest count",
+      "guestType": "Guest type",
+      "guestTypePlaceholder": "Select guest type",
+      "addGuestGroup": "Add guest group",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "dateTimePlaceholder": "Select date and hour",
+      "checkOutAfterCheckIn": "Check-out time must be after check-in time",
+      "bookedOnAuto": "Booked on will automatically use today's date.",
+      "source": "Source",
+      "sourcePlaceholder": "Select source",
+      "status": "Status",
+      "statusPlaceholder": "Select status",
+      "totalSellPrice": "Total sell price",
+      "totalSellPricePlaceholder": "Enter total sell price",
+      "totalNetPrice": "Total net price",
+      "totalNetPricePlaceholder": "Enter total net price (optional)",
+      "promotionName": "Promotion name",
+      "promotionNamePlaceholder": "Enter promotion name",
+      "mealPlan": "Meal plan",
+      "mealPlanPlaceholder": "Enter meal plan",
+      "bookingPreferences": "Booking preferences",
+      "bookingPreferencesPlaceholder": "Enter booking preferences",
+      "bookingConditions": "Booking conditions",
+      "bookingConditionsPlaceholder": "Enter booking conditions",
+      "note": "Note",
+      "notePlaceholder": "Enter note (optional)",
+      "guestTypes": {
+        "adults": "Adults",
+        "children": "Children",
+        "infants": "Infants"
+      }
+    }
+  },
+  "RoomsListPage": {
+    "title": "Room Management",
+    "searchPlaceholder": "Search by room name or ID",
+    "actions": {
+      "create": "Add room",
+      "save": "Save",
+      "cancel": "Cancel"
+    },
+    "filters": {
+      "roomType": "Room type",
+      "floor": "Floor"
+    },
+    "table": {
+      "id": "ID",
+      "name": "Room name",
+      "floor": "Floor",
+      "type": "Room type",
+      "status": "Status"
+    },
+    "statuses": {
+      "inUse": "In use",
+      "available": "Available"
+    },
+    "form": {
+      "title": "Add room",
+      "floor": "Floor",
+      "floorPlaceholder": "Enter floor",
+      "name": "Room name",
+      "namePlaceholder": "Enter room name",
+      "roomType": "Room type",
+      "roomTypePlaceholder": "Select room type"
+    }
+  },
+  "RoomTypesPage": {
+    "title": "Room Type Management",
+    "subtitle": "Manage all room types in your hotel",
+    "selected": "{count} selected",
+    "searchPlaceholder": "Search room type",
+    "empty": "No room types",
+    "noBranches": "Unassigned",
+    "rooms": "Rooms",
+    "people": "people",
+    "night": "night",
+    "actions": {
+      "create": "Create room type",
+      "view": "Details",
+      "cancel": "Cancel",
+      "close": "Close",
+      "save": "Save",
+      "add": "Add room type",
+      "deleteSelected": "Delete selected",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "delete": {
+      "title": "Delete room type",
+      "description": "Are you sure you want to delete this room type?",
+      "confirm": "Delete"
+    },
+    "modal": {
+      "title": {
+        "create": "Create room type",
+        "edit": "Edit room type",
+        "view": "Room type details"
+      }
+    },
+    "meta": {
+      "title": "Update Information",
+      "createdBy": "Created by",
+      "updatedBy": "Last updated by",
+      "createdAt": "Created at",
+      "updatedAt": "Last updated at"
+    },
+    "form": {
+      "name": "Room type name",
+      "namePlaceholder": "Enter room type name",
+      "branches": "Branches",
+      "branchesPlaceholder": "Select branches",
+      "allBranches": "All branches",
+      "price": "Room price",
+      "pricePlaceholder": "Enter room price",
+      "surfaceArea": "Surface area",
+      "surfaceAreaPlaceholder": "Enter surface area",
+      "maxPeople": "Max people",
+      "maxPeoplePlaceholder": "Enter max people"
+    },
+    "filters": {
+      "branch": "Filter by branch"
+    },
+    "table": {
+      "id": "ID",
+      "name": "Room type",
+      "price": "Price",
+      "creator": "Creator",
+      "createdAt": "Created at",
+      "action": "Action"
+    },
+    "pricingStrategies": {
+      "title": "Pricing strategies",
+      "subtitle": "Manage pricing adjustments by pricing tag for this room type.",
+      "empty": "No pricing strategies yet.",
+      "list": {
+        "type": "Type",
+        "direction": "Direction",
+        "value": "Value"
+      },
+      "options": {
+        "direction": {
+          "increase": "Increase",
+          "decrease": "Decrease"
+        },
+        "type": {
+          "percent": "Percent",
+          "amount": "Amount"
+        }
+      },
+      "actions": {
+        "add": "Add pricing strategy",
+        "addDisabled": "All pricing tags have already been applied to this room type.",
+        "create": "Create strategy"
+      },
+      "modal": {
+        "title": {
+          "create": "Add pricing strategy",
+          "edit": "Edit pricing strategy"
+        }
+      },
+      "form": {
+        "pricingTag": "Pricing tag",
+        "pricingTagPlaceholder": "Select a pricing tag",
+        "direction": "Increase/decrease option",
+        "directionPlaceholder": "Select increase or decrease",
+        "pricingType": "Pricing type",
+        "pricingTypePlaceholder": "Select pricing type",
+        "value": "Value",
+        "valuePlaceholder": "Enter adjustment value",
+        "errors": {
+          "decreasePercentMax": "Decrease percent must not exceed 100%.",
+          "decreaseAmountMax": "Decrease amount must not exceed the room price."
+        }
+      },
+      "delete": {
+        "title": "Delete pricing strategy",
+        "description": "Are you sure you want to delete this pricing strategy?",
+        "confirm": "Delete"
+      }
+    }
+  },
+  "RoomTypeFormDialog": {
+    "titleAdd": "Add new room type",
+    "titleEdit": "Room type details",
+    "cancel": "Cancel",
+    "save": "Save",
+    "name": "Room type name",
+    "namePlaceholder": "Enter room type name",
+    "price": "Room price",
+    "pricePlaceholder": "Enter room price",
+    "successCreate": "Room type created successfully!",
+    "successUpdate": "Room type updated successfully!"
+  },
+  "DeleteRoomTypeDialog": {
+    "confirmAll": "Are you sure you want to delete selected room types?",
+    "confirmSinglePrefix": "Are you sure you want to delete",
+    "confirmButton": "Yes, delete",
+    "cancelButton": "No, cancel",
+    "successAll": "Selected room types were deleted successfully!",
+    "successSinglePrefix": "Deleted",
+    "successSingleSuffix": "successfully!"
+  },
+  "ServiceTypesPage": {
+    "title": "Service Type Management",
+    "subtitle": "Manage all service types in your hotel",
+    "empty": "No service types found",
+    "actions": {
+      "create": "Add service type",
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save",
+      "cancel": "Cancel",
+      "more": "More"
+    },
+    "filters": {
+      "searchPlaceholder": "Search service type",
+      "department": "Filter by department"
+    },
+    "table": {
+      "name": "Service type",
+      "department": "Department",
+      "serviceCount": "Service count",
+      "createdAt": "Created at"
+    },
+    "pagination": {
+      "pageInfo": "Page {current}/{totalPages}",
+      "selectedRows": "{selected} of {total} rows selected"
+    },
+    "delete": {
+      "title": "Delete service type",
+      "description": "Are you sure you want to delete this service type?",
+      "confirm": "Delete"
+    },
+    "modal": {
+      "title": {
+        "create": "Add service type",
+        "edit": "Service type details"
+      }
+    },
+    "meta": {
+      "title": "Update information",
+      "createdBy": "Created by",
+      "updatedBy": "Last updated by",
+      "createdAt": "Created at",
+      "updatedAt": "Last updated at"
+    },
+    "form": {
+      "name": "Service type name",
+      "icon": "Icon",
+      "namePlaceholder": "Enter service type name",
+      "department": "Department",
+      "departmentPlaceholder": "Select department"
+    }
+  },
+  "SupportCategoriesPage": {
+    "title": "Support Category Management",
+    "subtitle": "Manage all support categories in your hotel",
+    "empty": "No support categories found",
+    "actions": {
+      "create": "Add support category",
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save",
+      "cancel": "Cancel",
+      "more": "More"
+    },
+    "filters": {
+      "searchPlaceholder": "Search support category",
+      "department": "Filter by department"
+    },
+    "table": {
+      "name": "Support category",
+      "department": "Department",
+      "supportTicketsCount": "Support tickets count",
+      "createdAt": "Created at"
+    },
+    "pagination": {
+      "pageInfo": "Page {current}/{totalPages}",
+      "selectedRows": "{selected} of {total} rows selected"
+    },
+    "delete": {
+      "title": "Delete support category",
+      "description": "Are you sure you want to delete this support category?",
+      "confirm": "Delete"
+    },
+    "modal": {
+      "title": {
+        "create": "Add support category",
+        "edit": "Support category details"
+      }
+    },
+    "meta": {
+      "title": "Update information",
+      "createdBy": "Created by",
+      "updatedBy": "Last updated by",
+      "createdAt": "Created at",
+      "updatedAt": "Last updated at"
+    },
+    "form": {
+      "name": "Support category name",
+      "namePlaceholder": "Enter support category name",
+      "department": "Department",
+      "departmentPlaceholder": "Select department"
+    }
+  },
+  "ServicesPage": {
+    "title": "Service Management",
+    "subtitle": "Manage all services in your hotel",
+    "empty": "No services found",
+    "actions": {
+      "create": "Add service",
+      "edit": "Edit",
+      "delete": "Delete",
+      "deleteBatch": "Delete selected",
+      "save": "Save",
+      "cancel": "Cancel",
+      "more": "More"
+    },
+    "createPage": {
+      "title": "Create New Service",
+      "back": "Back"
+    },
+    "detailPage": {
+      "title": "Service Details",
+      "back": "Back",
+      "errors": {
+        "notFound": "Service not found"
+      },
+      "meta": {
+        "title": "Update Information",
+        "createdBy": "Created by",
+        "updatedBy": "Updated by",
+        "createdAt": "Created at",
+        "updatedAt": "Updated at"
+      }
+    },
+    "form": {
+      "sections": {
+        "basicInfo": "Service Information",
+        "pricing": "Pricing Information"
+      },
+      "name": "Service name",
+      "namePlaceholder": "Enter service name",
+      "serviceType": "Service type",
+      "serviceTypePlaceholder": "Select service type",
+      "branches": "Branches",
+      "branchesPlaceholder": "Select branches",
+      "allBranches": "All branches",
+      "price": "Service price",
+      "pricePlaceholder": "Enter service price",
+      "discountType": "Discount type",
+      "discountTypePlaceholder": "Select discount type",
+      "discountTypeOptions": {
+        "percent": "Percent",
+        "amount": "Amount"
+      },
+      "discountValue": "Discount value",
+      "discountValuePlaceholder": "Enter discount value",
+      "discountStartAt": "Discount start at",
+      "discountStartAtPlaceholder": "Select discount start time",
+      "discountEndAt": "Discount end at",
+      "discountEndAtPlaceholder": "Select discount end time",
+      "discountGroupHint": "Discount fields must either be filled completely or left empty.",
+      "discountPercentRangeInvalid": "Discount percent must be greater than 0 and less than or equal to 100.",
+      "discountAmountRangeInvalid": "Discount amount must be greater than 0 and less than or equal the service price.",
+      "discountDateRangeInvalid": "Discount end time must be after discount start time.",
+      "description": "Description",
+      "descriptionPlaceholder": "Enter service description",
+      "status": "Active status",
+      "images": "Service images",
+      "imagesUploadTitle": "Drag and drop images here, or click to select",
+      "imagesUploadHint": "Supports JPG, PNG, WEBP - multiple images",
+      "imagesDragHint": "Drag and drop images to reorder. The first image has sort order 1.",
+      "imagesEmpty": "No images yet. Please add at least one service image.",
+      "thumbnail": "Thumbnail",
+      "setThumbnail": "Set thumbnail"
+    },
+    "filters": {
+      "searchPlaceholder": "Search by service name or description",
+      "serviceType": "Filter by service type",
+      "branch": "Filter by branch",
+      "status": "Filter by status"
+    },
+    "table": {
+      "serviceName": "Service name",
+      "serviceType": "Service type",
+      "branches": "Branches",
+      "price": "Price",
+      "discountType": "Discount type",
+      "discountValue": "Discount value",
+      "discountStartAt": "Discount start",
+      "discountEndAt": "Discount end",
+      "status": "Status",
+      "createdAt": "Created at"
+    },
+    "statuses": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "pagination": {
+      "pageInfo": "Page {current}/{totalPages}",
+      "selectedRows": "{selected} of {total} rows selected"
+    },
+    "selection": {
+      "selected": "{count} selected"
+    },
+    "delete": {
+      "title": "Delete service",
+      "description": "Are you sure you want to delete this service?",
+      "confirm": "Delete"
+    }
+  },
+  "EventsPage": {
+    "title": "Event Management",
+    "subtitle": "Manage all events shown to guests",
+    "empty": "No events found",
+    "actions": {
+      "create": "Create event",
+      "saveDraft": "Save draft",
+      "edit": "Edit",
+      "delete": "Delete",
+      "deleteBatch": "Delete selected",
+      "save": "Save",
+      "cancel": "Cancel",
+      "more": "More"
+    },
+    "createPage": {
+      "title": "Create New Event",
+      "back": "Back"
+    },
+    "detailPage": {
+      "title": "Event Details",
+      "back": "Back",
+      "errors": {
+        "notFound": "Event not found"
+      },
+      "meta": {
+        "title": "Update Information",
+        "createdBy": "Created by",
+        "updatedBy": "Last updated by",
+        "createdAt": "Created at",
+        "updatedAt": "Updated at",
+        "publishedAt": "Published at"
+      }
+    },
+    "form": {
+      "sections": {
+        "basicInfo": "Basic Information",
+        "content": "Event Content",
+        "publishing": "Publishing"
+      },
+      "title": "Title",
+      "titlePlaceholder": "Enter event title",
+      "excerpt": "Excerpt",
+      "excerptPlaceholder": "Enter event excerpt",
+      "branches": "Branches",
+      "branchesPlaceholder": "Select branches",
+      "allBranches": "All branches",
+      "content": "Content",
+      "contentPlaceholder": "Enter event content",
+      "thumbnail": "Thumbnail",
+      "thumbnailUploadTitle": "Drag and drop an image here, or click to select",
+      "thumbnailUploadHint": "Supports JPG, PNG, WEBP - up to 1 file",
+      "thumbnailRequired": "Please select an event thumbnail",
+      "contentImageMissing": "The inserted content image could not be found. Please insert it again.",
+      "contentImageUploadFailed": "Failed to upload images inside the event content.",
+      "sendNotification": "Send notification",
+      "sendNotificationHint": "This option only applies when creating a visible event.",
+      "status": "Active status"
+    },
+    "filters": {
+      "searchPlaceholder": "Search by title or excerpt",
+      "branch": "Filter by branch",
+      "status": "Filter by status"
+    },
+    "table": {
+      "title": "Event",
+      "excerpt": "Excerpt",
+      "branches": "Branches",
+      "status": "Status",
+      "publishedAt": "Published at",
+      "createdAt": "Created at"
+    },
+    "statuses": {
+      "active": "Active",
+      "inactive": "Hidden",
+      "unpublished": "Unpublished"
+    },
+    "pagination": {
+      "pageInfo": "Page {current}/{totalPages}",
+      "selectedRows": "{selected} of {total} rows selected"
+    },
+    "sendNotificationOptions": {
+      "yes": "Send",
+      "no": "Do not send"
+    },
+    "selection": {
+      "selected": "{count} selected"
+    },
+    "delete": {
+      "title": "Delete event",
+      "description": "Are you sure you want to delete this event?",
+      "confirm": "Delete"
+    }
+  },
+  "OrderServicesPage": {
+    "title": "Order Service Management",
+    "subtitle": "Manage all service orders in your hotel",
+    "empty": "No service orders found",
+    "actions": {
+      "more": "More",
+      "viewDetails": "View details"
+    },
+    "filters": {
+      "status": "Filter by status",
+      "fromDate": "From date",
+      "toDate": "To date"
+    },
+    "table": {
+      "orderId": "Order ID",
+      "service": "Service",
+      "room": "Room",
+      "quantity": "Quantity",
+      "totalPrice": "Total price",
+      "status": "Status",
+      "estimatedAt": "Estimated at",
+      "guestNote": "Guest note"
+    },
+    "statuses": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "cancelled": "Cancelled"
+    },
+    "pagination": {
+      "pageInfo": "Page {current}/{totalPages}",
+      "selectedRows": "{selected} of {total} rows selected"
+    },
+    "detailPage": {
+      "title": "Order Service",
+      "back": "Back",
+      "errors": {
+        "notFound": "Order service not found"
+      },
+      "sections": {
+        "orderInfo": "Order Information",
+        "serviceInfo": "Service Information",
+        "notes": "Notes"
+      },
+      "fields": {
+        "orderId": "Order ID",
+        "room": "Room",
+        "service": "Service",
+        "servicePrice": "Service price",
+        "serviceUnitPrice": "Unit price",
+        "discountType": "Discount type",
+        "discountValue": "Discount value",
+        "discountStartAt": "Discount start",
+        "discountEndAt": "Discount end",
+        "discountTypePercent": "Percent",
+        "discountTypeAmount": "Amount",
+        "quantity": "Quantity",
+        "totalPrice": "Total price",
+        "status": "Status",
+        "estimatedAt": "Estimated at",
+        "guestNote": "Guest note",
+        "staffNote": "Staff note",
+        "cancelReason": "Cancel reason",
+        "noImage": "No image"
+      },
+      "meta": {
+        "title": "Update Information",
+        "createdBy": "Created by",
+        "updatedBy": "Updated by",
+        "createdAt": "Created at",
+        "updatedAt": "Updated at"
+      },
+      "actions": {
+        "exit": "Exit",
+        "message": "Chat",
+        "openingChat": "Opening...",
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      },
+      "chatErrors": {
+        "missingBookingRoom": "Cannot open chat because booking room information is missing.",
+        "unavailable": "Unable to open chat right now."
+      },
+      "confirmModal": {
+        "title": "Confirm order service",
+        "confirmText": "Please confirm that you want to confirm this order service.",
+        "staffNoteLabel": "Staff note",
+        "staffNotePlaceholder": "Enter staff note",
+        "processing": "Processing...",
+        "submit": "Confirm"
+      }
+    }
+  },
+  "ReviewsPage": {
+    "title": "Review Management",
+    "subtitle": "Manage all guest reviews in your hotel",
+    "empty": "No reviews found",
+    "filters": {
+      "fromDate": "From date",
+      "toDate": "To date",
+      "order": "Sort by review date"
+    },
+    "sort": {
+      "newestFirst": "Newest first",
+      "oldestFirst": "Oldest first"
+    },
+    "card": {
+      "roomPrefix": "Room",
+      "unknownGuest": "Unknown guest",
+      "unknownDate": "Unknown date",
+      "emptyContent": "No review content"
+    },
+    "summary": {
+      "starLabel": "{star} stars",
+      "totalReviews": "({count} reviews)"
+    },
+    "pagination": "Showing {from} - {to} of {total}"
+  },
+  "SupportTicketsPage": {
+    "title": "Support Ticket Management",
+    "subtitle": "Manage all support tickets in your hotel",
+    "empty": "No support tickets found",
+    "actions": {
+      "more": "More",
+      "viewDetails": "View details"
+    },
+    "filters": {
+      "status": "Filter by status",
+      "priority": "Filter by priority",
+      "fromDate": "From date",
+      "toDate": "To date"
+    },
+    "table": {
+      "requestType": "Request type",
+      "room": "Room",
+      "priority": "Priority",
+      "status": "Status",
+      "content": "Content",
+      "createdAt": "Created at"
+    },
+    "statuses": {
+      "pending": "Pending",
+      "accepted": "Accepted",
+      "cancelled": "Cancelled",
+      "done": "Done"
+    },
+    "priorities": {
+      "low": "4 - Low",
+      "medium": "3 - Medium",
+      "high": "2 - High",
+      "urgent": "1 - Urgent"
+    },
+    "pagination": {
+      "pageInfo": "Page {current}/{totalPages}",
+      "selectedRows": "{selected} of {total} rows selected"
+    },
+    "chatErrors": {
+      "missingBookingRoom": "Cannot open chat because booking room information is missing.",
+      "unavailable": "Unable to open chat right now."
+    },
+    "modal": {
+      "title": "Support Ticket Details",
+      "fields": {
+        "ticketId": "Ticket ID",
+        "requestType": "Request type",
+        "room": "Room",
+        "bookingRoomCode": "Booking room code",
+        "priority": "Priority",
+        "status": "Status",
+        "content": "Content",
+        "resolutionTime": "Resolution time"
+      },
+      "meta": {
+        "title": "Update Information",
+        "createdAt": "Created at",
+        "updatedAt": "Updated at",
+        "updatedBy": "Updated by"
+      },
+      "duration": {
+        "seconds": "seconds",
+        "minutes": "minutes",
+        "hours": "hours",
+        "days": "days"
+      },
+      "actions": {
+        "close": "Close",
+        "message": "Chat",
+        "openingChat": "Opening...",
+        "confirm": "Confirm",
+        "complete": "Complete",
+        "processing": "Processing..."
+      }
+    }
+  },
+  "ServiceTypeFormDialog": {
+    "titleAdd": "Add new service type",
+    "titleEdit": "Service type details",
+    "cancel": "Cancel",
+    "create": "Create",
+    "save": "Save",
+    "meta": {
+      "title": "Update information",
+      "createdBy": "Created by:",
+      "updatedBy": "Updated by:",
+      "createdAt": "Created at:",
+      "updatedAt": "Last updated:"
+    },
+    "name": "Service type name",
+    "namePlaceholder": "Enter service type name",
+    "department": "Department",
+    "departmentPlaceholder": "Select department",
+    "departments": {
+      "housekeeping": "Housekeeping",
+      "reception": "Reception",
+      "maintenance": "Maintenance",
+      "customerCare": "Customer care"
+    },
+    "successCreate": "Service type added successfully!",
+    "successUpdate": "Service type updated successfully!"
+  },
+  "DeleteServiceTypeDialog": {
+    "confirmAll": "Are you sure you want to delete selected service types?",
+    "confirmSinglePrefix": "Are you sure you want to delete",
+    "confirmButton": "Yes, delete",
+    "cancelButton": "No, cancel",
+    "successAll": "Selected service types were deleted successfully!",
+    "successSinglePrefix": "Deleted",
+    "successSingleSuffix": "successfully!"
+  },
+  "ServiceListPage": {
+    "title": "Service List",
+    "searchPlaceholder": "Search service name",
+    "actions": {
+      "create": "Create",
+      "save": "Save",
+      "cancel": "Cancel"
+    },
+    "filters": {
+      "status": "Status",
+      "type": "Service type"
+    },
+    "statuses": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "table": {
+      "name": "Service name",
+      "type": "Service type",
+      "price": "Price",
+      "unit": "Unit",
+      "status": "Status",
+      "action": "Action"
+    },
+    "modal": {
+      "createTitle": "Create service",
+      "editTitle": "Edit service"
+    },
+    "form": {
+      "name": "Service name",
+      "namePlaceholder": "Enter service name",
+      "type": "Service type",
+      "typePlaceholder": "Select service type",
+      "price": "Price",
+      "unit": "Unit",
+      "unitPlaceholder": "Enter unit",
+      "status": "Status"
+    }
+  },
+  "ProfilePage": {
+    "back": "Back",
+    "title": "Account Information",
+    "changePassword": "Change password",
+    "editAvatar": "Edit",
+    "deleteAvatar": "Delete",
+    "status": "Status",
+    "active": "Active",
+    "inactive": "Inactive",
+    "personalInfo": "Personal Information",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "workInfo": "Work Information",
+    "staffCode": "Staff code",
+    "username": "Username",
+    "role": "Role",
+    "department": "Department",
+    "save": "Save changes",
+    "cancel": "Cancel"
+  },
+  "BranchPage": {
+    "title": "Branch Management",
+    "subtitle": "Manage branch locations and operating status",
+    "searchPlaceholder": "Search branch name or address",
+    "empty": "No branches found",
+    "location": "Location",
+    "status": "Status",
+    "statuses": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "filters": {
+      "cityPlaceholder": "Filter by province / city",
+      "statusAll": "All statuses"
+    },
+    "actions": {
+      "create": "Add branch",
+      "view": "View details",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "save": "Save",
+      "resetFilters": "Reset filters"
+    },
+    "delete": {
+      "title": "Delete branch",
+      "description": "Are you sure you want to delete this branch?",
+      "confirm": "Delete"
+    },
+    "locations": {
+      "loadError": "Failed to load province list"
+    },
+    "form": {
+      "name": "Branch name",
+      "namePlaceholder": "Enter branch name",
+      "address": "Address",
+      "addressPlaceholder": "Enter branch address",
+      "city": "Province / city",
+      "cityPlaceholder": "Select a province / city",
+      "ward": "Ward / commune",
+      "wardPlaceholder": "Select a ward / commune",
+      "status": "Operating status"
+    },
+    "meta": {
+      "title": "Update information",
+      "createdBy": "Created by",
+      "updatedBy": "Updated by",
+      "createdAt": "Created at",
+      "updatedAt": "Last updated"
+    },
+    "modal": {
+      "title": {
+        "create": "Add branch",
+        "edit": "Branch details"
+      }
+    }
+  },
+  "SettingsPage": {
+    "logo": "Hotel Logo",
+    "title": "Hotel Information",
+    "openSettings": "Settings",
+    "hotelInfo": "Hotel Information",
+    "hotelName": "Hotel name",
+    "phone": "Phone",
+    "city": "Location",
+    "cityPlaceholder": "Select location",
+    "loadingCities": "Loading locations...",
+    "provincesLoadError": "Failed to load location list",
+    "chatQualityAgentApiKey": "Chat quality agent API Key",
+    "chatQualityAgentApiKeyHint": "Create a new API key, then copy it to use elsewhere. The key is never shown on screen.",
+    "chatQualityAgentApiKeyPlaceholder": "Click \"Get API Key\" to generate a key",
+    "getApiKey": "Get API Key",
+    "generatingApiKey": "Generating...",
+    "copyApiKey": "Copy API Key",
+    "apiKeyGenerated": "A new API key was created",
+    "apiKeyCopied": "API key copied",
+    "apiKeyGenerateError": "Failed to create API key",
+    "apiKeyCopyError": "Failed to copy API key",
+    "editLogo": "Edit",
+    "deleteLogo": "Delete",
+    "save": "Save changes",
+    "cancel": "Cancel",
+    "modal": {
+      "title": "Email settings",
+      "description": "Manage the IMAP connection and email parsing patterns for the current tenant.",
+      "patternHint": "Use one pattern per line.",
+      "patternPlaceholder": "Enter one pattern per line",
+      "submit": "Save settings",
+      "submitting": "Saving...",
+      "cancel": "Close",
+      "sections": {
+        "imap": {
+          "title": "IMAP connection",
+          "description": "Complete the IMAP credentials if you want to sync or parse emails."
+        },
+        "emailBooking": {
+          "title": "Booking email patterns"
+        },
+        "emailCancel": {
+          "title": "Cancellation email patterns"
+        }
+      },
+      "imap": {
+        "host": "IMAP host",
+        "hostPlaceholder": "Example: imap.gmail.com",
+        "port": "IMAP port",
+        "portPlaceholder": "Example: 993",
+        "user": "IMAP user",
+        "userPlaceholder": "Enter the email account",
+        "password": "IMAP password",
+        "passwordPlaceholder": "Enter the email password",
+        "passwordHint": "The password is required whenever you use IMAP or provide email patterns.",
+        "passwordSavedHint": "A password is already stored. Leave this blank to keep it, or enter a new one to change it."
+      },
+      "emailBooking": {
+        "fields": {
+          "subject": "Email subject",
+          "bookingNumber": "Booking number",
+          "guest": "Guest",
+          "checkIn": "Check-in date",
+          "checkOut": "Check-out date",
+          "bookedOn": "Booked on",
+          "roomsBooked": "Rooms booked",
+          "source": "Source",
+          "totalNetPrice": "Total net price",
+          "totalSellPrice": "Total sell price",
+          "guestNumber": "Guest count",
+          "roomNumber": "Room count",
+          "promotionName": "Promotion name",
+          "mealPlan": "Meal plan",
+          "bookingConditions": "Booking conditions",
+          "bookingPreferences": "Booking preferences"
+        }
+      },
+      "emailCancel": {
+        "fields": {
+          "subject": "Cancellation email subject",
+          "bodies": "Cancellation email body"
+        }
+      },
+      "errors": {
+        "load": "Failed to load tenant settings",
+        "submit": "Failed to update tenant settings",
+        "imapRequired": "Please complete the IMAP configuration to use email patterns.",
+        "portInteger": "IMAP port must be an integer",
+        "unknownField": "field"
+      }
+    }
+  },
+  "ChangePasswordModal": {
+    "title": "Change Password",
+    "currentPassword": "Current password",
+    "newPassword": "New password",
+    "confirmPassword": "Confirm password",
+    "currentPasswordPlaceholder": "Enter current password",
+    "newPasswordPlaceholder": "Enter new password",
+    "confirmPasswordPlaceholder": "Confirm new password",
+    "cancel": "Cancel",
+    "processing": "Processing...",
+    "submit": "Change password"
+  }
+}

@@ -1,0 +1,186 @@
+import type { IconType } from "react-icons";
+import {
+  FiArchive,
+  FiBriefcase,
+  FiCamera,
+  FiClock,
+  FiCoffee,
+  FiDroplet,
+  FiGift,
+  FiGlobe,
+  FiGrid,
+  FiHeart,
+  FiHome,
+  FiImage,
+  FiMapPin,
+  FiMonitor,
+  FiMoon,
+  FiMusic,
+  FiNavigation,
+  FiPackage,
+  FiPhoneCall,
+  FiRefreshCw,
+  FiScissors,
+  FiShield,
+  FiShoppingBag,
+  FiStar,
+  FiSun,
+  FiTool,
+  FiTruck,
+  FiTv,
+  FiUmbrella,
+  FiUserCheck,
+  FiWifi,
+  FiWind,
+  FiZap,
+} from "react-icons/fi";
+import { IoFastFoodOutline } from "react-icons/io5";
+import {
+  MdAirportShuttle,
+  MdCelebration,
+  MdCleaningServices,
+  MdDirectionsCar,
+  MdLocalLaundryService,
+  MdMedicalServices,
+  MdMiscellaneousServices,
+  MdOutlineLocalDining,
+  MdOutlineRoomService,
+  MdOutlineSportsGymnastics,
+  MdPets,
+  MdPool,
+  MdSpa,
+  MdSupportAgent,
+} from "react-icons/md";
+import { PiMotorcycleFill } from "react-icons/pi";
+import { TbMassage } from "react-icons/tb";
+
+const SERVICE_TYPE_ICON_MAP = {
+  MdMiscellaneousServices,
+  MdOutlineRoomService,
+  MdCleaningServices,
+  MdLocalLaundryService,
+  MdSpa,
+  TbMassage,
+  MdOutlineLocalDining,
+  MdDirectionsCar,
+  MdAirportShuttle,
+  MdPool,
+  MdOutlineSportsGymnastics,
+  MdMedicalServices,
+  MdSupportAgent,
+  MdPets,
+  MdCelebration,
+  FiTool,
+  FiTruck,
+  FiCoffee,
+  FiSun,
+  FiDroplet,
+  FiScissors,
+  FiWifi,
+  FiMonitor,
+  FiTv,
+  FiPhoneCall,
+  FiMusic,
+  FiPackage,
+  FiShield,
+  FiHome,
+  FiGrid,
+  IoFastFoodOutline,
+  FiBriefcase,
+  FiCamera,
+  FiClock,
+  FiGift,
+  FiGlobe,
+  FiHeart,
+  FiImage,
+  FiMapPin,
+  FiMoon,
+  FiNavigation,
+  FiRefreshCw,
+  FiShoppingBag,
+  FiStar,
+  FiUmbrella,
+  FiUserCheck,
+  PiMotorcycleFill,
+  FiWind,
+  FiZap,
+  FiArchive,
+} satisfies Record<string, IconType>;
+
+export type ServiceTypeIconName = keyof typeof SERVICE_TYPE_ICON_MAP;
+
+export const DEFAULT_SERVICE_TYPE_ICON: ServiceTypeIconName =
+  "MdMiscellaneousServices";
+
+export const SERVICE_TYPE_ICON_OPTIONS: ServiceTypeIconName[] = [
+  "MdMiscellaneousServices",
+  "MdOutlineRoomService",
+  "MdCleaningServices",
+  "MdLocalLaundryService",
+  "MdSpa",
+  "TbMassage",
+  "MdOutlineLocalDining",
+  "MdDirectionsCar",
+  "MdAirportShuttle",
+  "MdPool",
+  "MdOutlineSportsGymnastics",
+  "MdMedicalServices",
+  "MdSupportAgent",
+  "MdPets",
+  "MdCelebration",
+  "FiTool",
+  "FiTruck",
+  "FiCoffee",
+  "FiSun",
+  "FiDroplet",
+  "FiScissors",
+  "FiWifi",
+  "FiMonitor",
+  "FiTv",
+  "FiPhoneCall",
+  "FiMusic",
+  "FiPackage",
+  "FiShield",
+  "FiHome",
+  "FiGrid",
+  "IoFastFoodOutline",
+  "FiBriefcase",
+  "FiCamera",
+  "FiClock",
+  "FiGift",
+  "FiGlobe",
+  "FiHeart",
+  "FiImage",
+  "FiMapPin",
+  "FiMoon",
+  "FiNavigation",
+  "FiRefreshCw",
+  "FiShoppingBag",
+  "FiStar",
+  "FiUmbrella",
+  "FiUserCheck",
+  "PiMotorcycleFill",
+  "FiWind",
+  "FiZap",
+  "FiArchive",
+];
+
+const SERVICE_TYPE_ICON_NAME_SET = new Set<ServiceTypeIconName>(
+  Object.keys(SERVICE_TYPE_ICON_MAP) as ServiceTypeIconName[],
+);
+
+export const isServiceTypeIconName = (
+  value: string,
+): value is ServiceTypeIconName =>
+  SERVICE_TYPE_ICON_NAME_SET.has(value as ServiceTypeIconName);
+
+export const normalizeServiceTypeIconName = (
+  value?: string | null,
+): ServiceTypeIconName => {
+  if (!value) return DEFAULT_SERVICE_TYPE_ICON;
+  if (isServiceTypeIconName(value)) return value;
+  return DEFAULT_SERVICE_TYPE_ICON;
+};
+
+export const getServiceTypeIconComponent = (value?: string | null): IconType =>
+  SERVICE_TYPE_ICON_MAP[normalizeServiceTypeIconName(value)];

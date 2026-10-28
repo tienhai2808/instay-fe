@@ -1,0 +1,348 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: "24"
+  COVERAGE_THRESHOLD: "0"
+  IMAGE_NAME: ghcr.io/${{ github.repository }}
+  SNYK_VERSION: "1.1300.0"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+  DOCKER_BUILDKIT: "1"
+
+permissions:
+  contents: read
+  security-events: write
+  id-token: write
+  packages: write
+  actions: read
+  pull-requests: write
+
+jobs:
+  pre-checks:
+    name: Pre checks
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          clean: true
+          fetch-depth: 1
+
+      - name: Secrets scan
+        run: |
+          TOOLS_DIR="$RUNNER_TEMP/ci-tools"
+          GITLEAKS_DIR="$TOOLS_DIR/gitleaks/8.30.0"
+          mkdir -p "$GITLEAKS_DIR"
+          if [ ! -x "$GITLEAKS_DIR/gitleaks" ]; then
+            curl -sSfL \
+              "https://github.com/gitleaks/gitleaks/releases/download/v8.30.0/gitleaks_8.30.0_linux_x64.tar.gz" \
+              | tar -xz -C "$GITLEAKS_DIR" gitleaks
+            chmod +x "$GITLEAKS_DIR/gitleaks"
+          fi
+          "$GITLEAKS_DIR/gitleaks" detect --source . --redact \
+            --exit-code 1
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile --prefer-offline
+
+      - name: ESLint
+        run: pnpm run lint
+
+      - name: TypeScript type check
+        run: pnpm run type-check
+
+  sast:
+    name: SAST
+    runs-on: ubuntu-24.04
+    needs: pre-checks
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          clean: true
+          fetch-depth: 1
+
+      - name: Semgrep
+        run: |
+          python3 -m venv "$RUNNER_TEMP/semgrep"
+          "$RUNNER_TEMP/semgrep/bin/python" -m pip install semgrep
+          "$RUNNER_TEMP/semgrep/bin/semgrep" scan \
+            --config p/javascript \
+            --config p/typescript \
+            --config p/react \
+            --config p/nextjs \
+            --config p/owasp-top-ten \
+            --config p/secrets .
+
+  sca:
+    name: SCA
+    runs-on: ubuntu-24.04
+    needs: pre-checks
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          clean: true
+          fetch-depth: 1
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install deps
+        run: pnpm install --frozen-lockfile --prefer-offline
+
+      - name: Setup Snyk
+        run: |
+          TOOLS_DIR="$RUNNER_TEMP/ci-tools"
+          SNYK_DIR="$TOOLS_DIR/snyk/${{ env.SNYK_VERSION }}"
+          SNYK_BIN="$SNYK_DIR/node_modules/.bin/snyk"
+          if [ ! -x "$SNYK_BIN" ]; then
+            npm install --prefix "$SNYK_DIR" snyk@${{ env.SNYK_VERSION }}
+          fi
+          echo "$(dirname "$SNYK_BIN")" >> "$GITHUB_PATH"
+
+      - name: Snyk — dependency vulnerability scan
+        run: |
+          snyk test \
+            --severity-threshold=high \
+            --file=pnpm-lock.yaml \
+            --package-manager=pnpm
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+  build-test:
+    name: Build & Test
+    runs-on: ubuntu-24.04
+    needs: [sast, sca]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          clean: true
+          fetch-depth: 1
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Cache Next.js build
+        uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: ${{ runner.os }}-next-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('**/*.[jt]s', '**/*.[jt]sx', '!node_modules/**', '!.next/**') }}
+          restore-keys: ${{ runner.os }}-next-${{ hashFiles('pnpm-lock.yaml') }}-
+
+      - name: Install deps
+        run: pnpm install --frozen-lockfile --prefer-offline
+
+      - name: Unit tests + coverage
+        run: pnpm test --passWithNoTests
+
+      - name: Check coverage >= ${{ env.COVERAGE_THRESHOLD }}%
+        run: |
+          COVERAGE=$(node -e "
+            const fs = require('fs');
+            const d = JSON.parse(fs.readFileSync('coverage/coverage-summary.json', 'utf8'));
+            process.stdout.write(String(d.total.lines.pct));
+          ")
+          echo "Coverage: $COVERAGE%"
+          node -e "
+            const c = parseFloat('$COVERAGE');
+            const t = parseFloat('${{ env.COVERAGE_THRESHOLD }}');
+            if (c < t) {
+              console.error('FAIL: ' + c + '% < ' + t + '%');
+              process.exit(1);
+            }
+            console.log('OK: ' + c + '%');
+          "
+
+      - name: Build app
+        run: pnpm run build
+        env:
+          NODE_ENV: production
+          NEXT_PUBLIC_API_URL: ${{ vars.NEXT_PUBLIC_API_URL }}
+          NEXT_PUBLIC_FIREBASE_API_KEY: ${{ vars.NEXT_PUBLIC_FIREBASE_API_KEY }}
+          NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: ${{ vars.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN }}
+          NEXT_PUBLIC_FIREBASE_PROJECT_ID: ${{ vars.NEXT_PUBLIC_FIREBASE_PROJECT_ID }}
+          NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET: ${{ vars.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET }}
+          NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: ${{ vars.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID }}
+          NEXT_PUBLIC_FIREBASE_APP_ID: ${{ vars.NEXT_PUBLIC_FIREBASE_APP_ID }}
+          NEXT_PUBLIC_FIREBASE_VAPID_KEY: ${{ vars.NEXT_PUBLIC_FIREBASE_VAPID_KEY }}
+          NEXT_PUBLIC_FARO_ENABLED: ${{ vars.NEXT_PUBLIC_FARO_ENABLED }}
+          NEXT_PUBLIC_FARO_URL: ${{ vars.NEXT_PUBLIC_FARO_URL }}
+          NEXT_PUBLIC_FARO_API_KEY: ${{ vars.NEXT_PUBLIC_FARO_API_KEY }}
+          NEXT_PUBLIC_FARO_APP_NAME: ${{ vars.NEXT_PUBLIC_FARO_APP_NAME }}
+          NEXT_PUBLIC_FARO_APP_VERSION: ${{ vars.NEXT_PUBLIC_FARO_APP_VERSION }}
+          NEXT_PUBLIC_FARO_RELEASE: ${{ vars.NEXT_PUBLIC_FARO_RELEASE }}
+          NEXT_PUBLIC_FARO_ENVIRONMENT: ${{ vars.NEXT_PUBLIC_FARO_ENVIRONMENT }}
+          NEXT_PUBLIC_FARO_CAPTURE_CONSOLE: ${{ vars.NEXT_PUBLIC_FARO_CAPTURE_CONSOLE }}
+
+  container-scan:
+    name: Container scan
+    runs-on: ubuntu-24.04
+    needs: build-test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          clean: true
+          fetch-depth: 1
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            --build-arg NODE_ENV=production \
+            --build-arg NEXT_PUBLIC_API_URL=${{ vars.NEXT_PUBLIC_API_URL }} \
+            --build-arg NEXT_PUBLIC_FIREBASE_API_KEY=${{ vars.NEXT_PUBLIC_FIREBASE_API_KEY }} \
+            --build-arg NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=${{ vars.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN }} \
+            --build-arg NEXT_PUBLIC_FIREBASE_PROJECT_ID=${{ vars.NEXT_PUBLIC_FIREBASE_PROJECT_ID }} \
+            --build-arg NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=${{ vars.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET }} \
+            --build-arg NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=${{ vars.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID }} \
+            --build-arg NEXT_PUBLIC_FIREBASE_APP_ID=${{ vars.NEXT_PUBLIC_FIREBASE_APP_ID }} \
+            --build-arg NEXT_PUBLIC_FIREBASE_VAPID_KEY=${{ vars.NEXT_PUBLIC_FIREBASE_VAPID_KEY }} \
+            --build-arg NEXT_PUBLIC_FARO_ENABLED=${{ vars.NEXT_PUBLIC_FARO_ENABLED }} \
+            --build-arg NEXT_PUBLIC_FARO_URL=${{ vars.NEXT_PUBLIC_FARO_URL }} \
+            --build-arg NEXT_PUBLIC_FARO_API_KEY=${{ vars.NEXT_PUBLIC_FARO_API_KEY }} \
+            --build-arg NEXT_PUBLIC_FARO_APP_NAME=${{ vars.NEXT_PUBLIC_FARO_APP_NAME }} \
+            --build-arg NEXT_PUBLIC_FARO_APP_VERSION=${{ vars.NEXT_PUBLIC_FARO_APP_VERSION }} \
+            --build-arg NEXT_PUBLIC_FARO_RELEASE=${{ vars.NEXT_PUBLIC_FARO_RELEASE }} \
+            --build-arg NEXT_PUBLIC_FARO_ENVIRONMENT=${{ vars.NEXT_PUBLIC_FARO_ENVIRONMENT }} \
+            --build-arg NEXT_PUBLIC_FARO_CAPTURE_CONSOLE=${{ vars.NEXT_PUBLIC_FARO_CAPTURE_CONSOLE }} \
+            -t ${{ env.IMAGE_NAME }}:${{ github.sha }} .
+
+      - name: Generate SBOM
+        uses: anchore/sbom-action@v0
+        with:
+          image: ${{ env.IMAGE_NAME }}:${{ github.sha }}
+          format: spdx-json
+          output-file: sbom.spdx.json
+          upload-artifact: false
+          upload-release-assets: false
+
+      - name: Upload SBOM
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: sbom.spdx.json
+          if-no-files-found: error
+          retention-days: 1
+          overwrite: true
+
+      - name: Trivy — SBOM scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: sbom
+          scan-ref: sbom.spdx.json
+          format: table
+          severity: HIGH,CRITICAL
+          exit-code: 1
+          ignore-unfixed: true
+
+      - name: Export Docker image for downstream jobs
+        run: |
+          mkdir -p "$RUNNER_TEMP/docker-image"
+          docker save "$IMAGE_NAME:$GITHUB_SHA" | gzip -1 > "$RUNNER_TEMP/docker-image/image.tar.gz"
+
+      - name: Upload Docker image
+        uses: actions/upload-artifact@v4
+        with:
+          name: docker-image
+          path: ${{ runner.temp }}/docker-image/image.tar.gz
+          compression-level: 0
+          if-no-files-found: error
+          retention-days: 1
+          overwrite: true
+
+  publish:
+    name: Publish image to GHCR
+    runs-on: ubuntu-24.04
+    needs: container-scan
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - name: Download Docker image
+        uses: actions/download-artifact@v4
+        with:
+          name: docker-image
+          path: ${{ runner.temp }}/docker-image
+
+      - name: Load Docker image
+        run: docker load --input "$RUNNER_TEMP/docker-image/image.tar.gz"
+
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push image to GHCR
+        run: |
+          docker push ${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+      - name: Install cosign
+        run: |
+          TOOLS_DIR="$RUNNER_TEMP/ci-tools"
+          COSIGN_DIR="$TOOLS_DIR/cosign"
+          mkdir -p "$COSIGN_DIR"
+          if [ ! -x "$COSIGN_DIR/cosign" ]; then
+            curl -sSfL \
+              https://github.com/sigstore/cosign/releases/latest/download/cosign-linux-amd64 \
+              -o "$COSIGN_DIR/cosign"
+            chmod +x "$COSIGN_DIR/cosign"
+          fi
+          echo "$COSIGN_DIR" >> "$GITHUB_PATH"
+
+      - name: Sign image (keyless via Sigstore)
+        run: |
+          cosign sign --yes \
+            ${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+      - name: Download SBOM
+        uses: actions/download-artifact@v4
+        with:
+          name: sbom
+          path: .
+
+      - name: Attach SBOM to image
+        run: |
+          cosign attach sbom \
+            --sbom sbom.spdx.json \
+            ${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+      - name: Cleanup temporary files
+        if: always()
+        run: |
+          rm -rf "$RUNNER_TEMP/docker-image"
+          rm -f sbom.spdx.json
