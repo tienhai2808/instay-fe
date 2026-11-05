@@ -13,32 +13,13 @@ import { useRouter } from "@/i18n/routing";
 import { useMessage } from "@/providers/MessageProvider";
 import { useAuthStore } from "@/stores/useAuthStore";
 import type { CreateEventRequest } from "@/types/request/event";
-import { resolvePublicImageUrl } from "@/utils/media";
+import { inferImageKeyFromSrc, resolvePublicImageUrl } from "@/utils/media";
 import { uploadFilesWithPresignedURLs } from "@/utils/presigned-upload";
 import EventForm, {
   type EventBranchOption,
   type EventFormSubmitPayload,
 } from "../components/EventForm";
 import { eventQueryKeys } from "../event-query-keys";
-
-const normalizeStoragePrefix = (value: string) =>
-  value.endsWith("/") ? value : `${value}/`;
-
-const inferImageKeyFromSrc = (src?: string | null) => {
-  if (!src) return null;
-
-  if (/^https?:\/\//i.test(src)) {
-    const prefix = normalizeStoragePrefix(
-      process.env.NEXT_PUBLIC_GCS_PUBLIC_PREFIX ||
-        "https://storage.googleapis.com/instay-dev-public-bucket/",
-    );
-
-    if (!src.startsWith(prefix)) return null;
-    return decodeURIComponent(src.slice(prefix.length));
-  }
-
-  return src.startsWith("/") ? src.slice(1) : src;
-};
 
 const buildEventContentPayload = async (
   content: string,
@@ -87,7 +68,7 @@ const buildEventContentPayload = async (
     const localId = node.getAttribute("data-local-id");
     const uploadedKey = localId ? keyByLocalId.get(localId) : null;
     const fallbackKey = inferImageKeyFromSrc(node.getAttribute("src"));
-    const key = uploadedKey || fallbackKey;
+    const key = uploadedKey || node.getAttribute("data-key") || fallbackKey;
 
     if (!key) return;
 

@@ -3,16 +3,15 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin();
 
+const publicStorageUrl = process.env.NEXT_PUBLIC_STORAGE_PUBLIC_BASE_URL?.trim();
+const storagePattern = publicStorageUrl
+  ? new URL(`${publicStorageUrl.replace(/\/+$/, "")}/**`)
+  : undefined;
+
 const nextConfig: NextConfig = {
   output: "standalone",
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "storage.googleapis.com",
-        pathname: "/**",
-      },
-    ],
+    remotePatterns: storagePattern ? [storagePattern] : [],
   },
 };
 

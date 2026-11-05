@@ -213,8 +213,8 @@ export function NotificationPanel({
   }
 
   return (
-    <div className="h-[520px] w-[380px] overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg">
-      <div className="border-b border-gray-200 px-4 py-3">
+    <div className="flex h-[520px] w-[380px] flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg">
+      <div className="shrink-0 border-b border-gray-200 px-4 py-3">
         <p className="text-sm font-semibold text-[#111827]">{title}</p>
       </div>
       {listContent}

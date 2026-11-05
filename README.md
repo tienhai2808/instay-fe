@@ -61,7 +61,7 @@ Optional:
 NEXT_PUBLIC_WEBSOCKET_URL=
 NEXT_PUBLIC_SSE_URL=
 NEXT_PUBLIC_SSE_ENABLED=true
-NEXT_PUBLIC_GCS_PUBLIC_PREFIX=
+NEXT_PUBLIC_STORAGE_PUBLIC_BASE_URL=https://files.example.com
 ```
 
 Optional for Grafana Faro frontend monitoring:
@@ -153,6 +153,8 @@ Pushes to `main`, pull requests targeting `main` and manual runs execute the che
 2. `sast` and `sca` run in parallel: Semgrep and Snyk.
 3. `build-test`: unit tests, the existing coverage gate, then Next.js build.
 4. `container-scan`: Docker build → SPDX SBOM generation → Trivy SBOM scan.
-5. `publish`: push `ghcr.io/<owner>/<repo>:<commit-sha>`, sign the image and attach the SBOM.
+5. `publish`: push `tienhai2808/instay-fe:<commit-sha>` to Docker Hub, sign the image and attach the SBOM.
+
+Set the repository Actions secret `DOCKERHUB_TOKEN` to a Docker Hub access token with write access for `tienhai2808`.
 
 Image and SBOM are passed between jobs as workflow artifacts. Keep `SNYK_TOKEN` and the existing `NEXT_PUBLIC_*` repository variables configured. Only the commit SHA image tag is published; deployment selects the desired SHA. `make github CM="message"` requires the current branch to be `main` and pushes it via `git push origin main`.

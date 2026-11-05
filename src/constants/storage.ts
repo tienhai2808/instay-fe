@@ -1,3 +1,2 @@
-export const GCS_PUBLIC_PREFIX =
-  process.env.NEXT_PUBLIC_GCS_PUBLIC_PREFIX ??
-  "https://storage.googleapis.com/instay-dev-public-bucket/";
+export const STORAGE_PUBLIC_BASE_URL =
+  process.env.NEXT_PUBLIC_STORAGE_PUBLIC_BASE_URL?.trim().replace(/\/+$/, "") ?? "";
